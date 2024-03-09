@@ -310,11 +310,10 @@
 	<p>Terlepas dari basahnya pipinya, ia tidak menutupi tangisnya. Namun, ia menahan suaranya, tidak ingin membangunkan orang-orang dirumahnya.</p>
 	<p>Dalam selimut malam yang sunyi ini, semakin sedikit dari dirinya yang tersisa.</p>
 	
-	<pre>
-	---------------------------------------------------------------------------	
-	Rio's Profile picture generated using getimg.ai
-	Using Sudachi v1 dataset by ikena (https://www.patreon.com/user?u=27247323)
-	09/03/2024
-	</pre>
+	<span style="font-size:7pt;">
+   <br>---------------------------------------------------------------------------
+	<br>Rio's Profile picture generated using getimg.ai using Sudachi v1 dataset by ikena (https://www.patreon.com/user?u=27247323)
+	<br>09/03/2024
+	</span>
 </body>
 </html>
