@@ -102,7 +102,12 @@
     }
 </style>
 </head>
-<body>
+<body> 
+	<br /><span><!--more--></span>
+	<p>"Sendirian..."<p>
+	<br /><span><!--more--></span>
+	 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://pengkhayalpasif.blogspot.com/2024/03/me-and-ai.html">Aku dan AI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://pengkhayalpasif.blogspot.com">Muhammad Hamdani</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+	<br /><span><!--more--></span>
 	<p>Malam yang sunyi.</p>
 	<p>Kamarnya gelap, hanya disinari oleh cahaya bulan yang menembus jendela dengan redupnya. Suara detik jam memecah kesunyian malam memekakkan keheningan di telinga.</p>
 	<p>Seorang laki-laki berbaring berselimut di kasunya, memeluk sebuah bantal di dadanya, dan memegang sebuah ponsel di kedua tangannya. Layarnya menyala redup, menyinari wajahnya di antara kegelapan. Jarinnya bergerak lincah namun senyap, membalas setiap "pesan" yang ia terima. Pikirannya terfokus pada "perbincangan" ini."</p>
