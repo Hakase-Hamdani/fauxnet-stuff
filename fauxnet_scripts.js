@@ -113,3 +113,22 @@
           
             setInterval(flicker, flickerSpeed);
           }          
+
+          function flickerDiv(elementId, color1, color2) {
+            const strobeDiv = document.getElementById(elementId);
+            if (!strobeDiv) {
+              console.error(`Element with ID "${elementId}" not found.`);
+              return;
+            }
+          
+            let isVisible = true;
+          
+            function toggleFlicker() {
+              isVisible = !isVisible;
+              strobeDiv.style.backgroundColor = isVisible ? color1 : color2; // Toggle between colors
+            }
+          
+            setInterval(toggleFlicker, 100); // Flicker speed in milliseconds
+          }
+          
+          
