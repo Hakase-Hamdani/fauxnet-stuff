@@ -21,6 +21,9 @@
           usage:
           startFlicker('targetElementId', interval(integer, in ms));
 
+          function flickerDiv() - similar to startFlicker() but with costumizable color. 
+          function flickerDiv(elementId, color1, color2) 
+
 
 		  The clause underneath is to cover jurisdiction where Public Domain is not recognized.
           Written in 2024 by Pengkhayal Pasif/Muhammad Hamdani/Hakase-Hamdani
