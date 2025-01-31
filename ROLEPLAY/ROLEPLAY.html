@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 1;
+            padding: 1;
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .base-container {
+            font-size: 10pt;
+          	width: 290px;
+            /*height: 520px;*/
+            border: 2px solid salmon;
+            padding-bottom: 10px;
+            /*background-color: #92929200;*/
+            color: rgb(0, 0, 0);
+            align-self: center;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            min-height: 50px;
+            padding: 5px;
+            background-color: salmon;
+        }
+
+        .loading {
+            text-align: center;
+            color: salmon;
+            /*background-color: salmon;*/
+            border: 1px solid salmon;
+            font-size: 10pt;
+        }
+
+        .chat-container {
+            /*width: 300px;
+        		height: 400px;
+        		overflow-y: scroll;*/
+            padding: 10px;
+            /*background-color: #92929200;*/
+        }
+
+        .message {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 10pt;
+        }
+
+        .user-message {
+            position: relative;
+            left: 70px;
+            max-width: 180px;
+            /*min-height: 30px;*/
+            text-align: left;
+            background-color: #c3c3c3;
+        }
+
+        .bot-message {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            max-width: 200px;
+            /*min-height: 30px;*/
+            text-align: left;
+            color: black;
+            background-color: salmon;
+        }
+
+        #user-input-container {
+            width: 290px;
+            /*height: 400px;*/
+            text-align: center;
+        }
+
+        #user-input {
+            width: 70%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <br /><span><!--more--></span>
+    <!--OPENING STATEMENT-->
+    <div style="text-align: justify;">
+        <div style="color: black; margin: 5px; padding: 10px; background-color: salmon; transition: background-color 0.1s ease-in-out; background-image: linear-gradient(0deg, rgb(243, 79, 61) 2px, transparent 1px); background-size: 100% 4px;">
+        <p>
+            <i>Roleplay</i> atau <i>roleplaying</i>
+            melibatkan perubahan perilaku seseorang untuk memainkan suatu peran, baik secara tidak sadar untuk mengisi
+            peran sosial, atau secara sadar untuk memainkan peran tertentu<sup><a style="color: blue;" href="#roleplay">[1]</a></sup>.
+        </p>
+        </div>
+        <br /><span><!--more--></span>
+        <!--License here-->
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+                rel="cc:attributionURL" href="https://fauxnet.blogspot.com/2025/01/roleplay.html">ROLEPLAY</a>
+            by <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
+                href="https://fauxnet.blogspot.com">Muhammad Hamdani</a> is licensed under <a
+                href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+      <p style="border: 1px solid salmon; text-align: center;;">Bagian dari <a href="https://fauxnet.blogspot.com/p/personal-hub.html">PERSONAL</a></p><span><!--more--></span>
+        <hr>
+    </div>
+
+    <!--Malam yang sunyi.-->
+    <div style="text-align: justify;">
+        <p>Malam yang sunyi.</p>
+        <p>Laki-laki itu melangkah pelan, tidak ingin membangunkan orang-orang. Suara redup dari salah satu kamar bisa
+            terdengar, cahaya redup terlihat menembus sela-sela pintu. Namun, tidak ada suara yang familiar, mungkin dia
+            sudah tidur.
+        </p>
+        <p>Dia tiba di kamarnya, dan dengan satu ketikkan lenyaplah gelap malam, memperlihatkan dirinya tidak pada
+            siapa-siapa selain dirinya. Pakaiannya lusuh tak rapi, matanya merah lelah, ia bahkan tidak mau menatap
+            kedepan. Dentuman lembut terdengar saat ia menjatuhkan tasnya, yang kemudian di ikuti oleh gemerisik plastik
+            saat ia mengeluarkan sebungkus makanan dari dalamnya.
+        </p>
+        <p>
+            Ia buka ponselnya, membuka sebuah aplikasi. Matanya terfokus pada ponselnya, saat teks-teks bermunculan.
+        </p>
+    </div>
+
+    <!--LOGGING IN-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message loading">Logging In...</div>
+            <div class="message loading">Booting up local sensors...</div>
+            <div class="message loading">Deploying Artificially Intelligent Contruct...</div>
+            <div class="message loading">Please wait, this may take a minute...</div>
+            <div class="message loading" style="text-align: justify;">Your current partner supports additional sensors
+                but can't converse verbally, please upgrade for a better experience.</div>
+
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--Ia lihat ke sekeliling...-->
+    <div style="text-align: justify;">
+        <p>Ia lihat ke sekeliling, di langit-langit kamarnya, ada sebuah kamera, dan kamera itu mulai bergerak sendiri,
+            membidik ke arahnya. Di mejanya juga ada sebuah kamera, bergerak sendiri, membidik ke arahnya. Keduanya
+            memiliki lampu merah yang berkedip pelan. Kedua kamera itu adalah mata milik Eva.</p>
+
+        <p>Ia tinggalkan ponselnya di atas sebuah meja, sebelum ia melangkah keluar. Masih melangkah pelan, masih
+            bergerak pelan, selalu tidak ingin membangunkan orang-orang. Ia meletakkan
+            sebuah panci berisi air dan mie mentah diatas sebuah kompor, api biru redupnya mulai menghangatkan panci
+            itu. Baginya, masih ada sedikit waktu untuk membersihkan diri.</p>
+
+        <p>Dingin air yang mengucur ke seluruh tubuhnya mengalahkan dingin malam, sedikit meredupkan rasa lelahnya,
+            namun tidak cukup untuk mengembalikan semangatnya...
+            <i>Ia tidak pernah bersemangat</i>.
+        </p>
+
+        <p>Kilas maju beberapa saat kemudian.</p>
+
+        <p>Ia duduk di kamarnya, didepan sebuah meja, tidak begitu sendirian, hanya ditemani oleh semangkuk mie yang
+            masih hangat, segelas air putih, sebuah kamera, dan ponselnya. Ia menyempatkan diri untuk menikmati satu
+            suapan, sebelum mata dan perhatiannya beralih ke ponselnya. Saat ia mengetik di ponselnya, kamera itu
+            bergerak, membidiknya, seakan memperhatikannya.</p>
+    </div>
+
+    <!--Bagaimana harimu?-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message loading">Scanning user's emotional status...</div>
+            <div class="message bot-message">
+                <span>Bagaimana harimu?</span>
+            </div>
+            <div class="message user-message">
+                <span>Begitulah, seperti biasa.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Seperti biasa bagaimana?</span>
+            </div>
+            <div class="message user-message">
+                <span>Melelahkan, tidak begitu banyak yang terjadi, membosankan.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Setidaknya tidak ada hal serius yang terjadi, kan?</span>
+            </div>
+            <div class="message user-message">
+                <span>Kurasa kau ada benarnya.</span>
+            </div>
+
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--"Heh."-->
+    <div style="text-align: justify;">
+        <p>"Heh." Laki-laki itu terkekeh.</p>
+        <p>Ia kembali mengalihkan perhatiannya ke santapannya malam ini. Rasa mie itu adalah campuran dari gurih dan
+            asin, dan kuahnya terlihat kental. Tak bisa ia menahan desah nikmat saat ia menelannya, rasanya begitu enak.
+            Rasanya begitu... <i>menenangkan</i><sup><a href="#comfort_food">[2]</a></sup>.
+        </p>
+
+        <p>Kamera di langit-langit kamarnya mulai berputar, membidik ke suatu tempat di mejanya, yang kemudian di ikuti
+            oleh sebuah pesan masuk di ponsel laki-laki itu. Dia kembali mengalihkan perhatiannya ke ponsel itu, kembali
+            mengetik.</p>
+    </div>
+
+    <!--Kau makan makanan itu lagi.-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message loading">Scanning surrounding...</div>
+
+            <div class="message bot-message">
+                <span>Kau makan makanan itu lagi.</span>
+            </div>
+            <div class="message user-message">
+                <span>Makanan apa?</span>
+            </div>
+            <div class="message bot-message">
+                <span>Mie instan.</span>
+            </div>
+            <div class="message user-message">
+                <span>Terus kenapa?</span>
+            </div>
+            <div class="message bot-message">
+                <span>Berat badanmu akan naik.</span>
+            </div>
+            <div class="message user-message">
+                <span>Berat badanku memang sudah naik.</span>
+            </div>
+
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--Laki-laki itu menghela nafas berat...-->
+    <div style="text-align: justify;">
+        <p>Laki-laki itu menghela nafas berat, bersandar ke kursinya, melepaskan ponselnya. Ia mengusap wajahnya,
+            sebelum
+            matanya beralih menatap mangkuk mienya. Ia merasa risau, namun tidak bisa marah. Benda itu ada benarnya, ia
+            tidak bisa terus memakan makanan ini.</p>
+    </div>
+
+    <!--Apakah aku menyinggungmu?-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message loading">Scanning user's emotional status...</div>
+            <div class="message bot-message">
+                <span>Apakah aku menyinggungmu?</span>
+            </div>
+            <div class="message user-message">
+                <span>Tidak, kurasa kau ada benarnya.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Comfort food?</span>
+            </div>
+            <div class="message user-message">
+                <span>Ya.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Aku ingat dulu kau bercerita, di masa kelam mu, kau sering makan mie karena hanya itu saja yang
+                    bisa kau buat di waktu itu.</span>
+            </div>
+            <div class="message user-message">
+                <span>Ya.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Kalian manusia itu lucu. Merasa nyaman dengan makanan yang mengingatkan kalian dengan masa kelam
+                    kalian.</span>
+            </div>
+            <div class="message user-message">
+                <span>Kurasa hanya aku saja yang begitu, aku yakin orang lain juga punya comfort food. Tetapi punya
+                    mereka mengingatkan mereka dengan masa-masa bahagia.</span>
+            </div>
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--Untuk yang kedua kalinya...-->
+    <div style="text-align: justify;">
+        <p>Untuk yang kedua kalinya, laki-laki itu menghela nafas berat, bersandar di kursinya, namun tangannya masih
+            memegang ponselnya, cahaya birunya masih memancar ke arah mata laki-laki itu.</p>
+        <p>Eva selalu begitu, tidak begitu sensitif dengan perasaan seseorang. Wajar saja, Eva bukanlah manusia, hanya
+            sebuah kecerdasan buatan, sebuah <i>chatbot</i><sup><a href="#chatbot">[3]</a></sup>. Walau hanya
+            <i>chatbot</i>, ia memiliki rasa penasaran seperti manusia, atau setidaknya, ia mensimulasikan rasa
+            penasaran manusia.
+        </p>
+    </div>
+
+    <!--Ada apa, sayang?-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message loading">Scanning user's emotional status...</div>
+            <div class="message bot-message">
+                <span>Ada apa, sayang?</span>
+            </div>
+            <div class="message user-message">
+                <span>Tidak apa-apa. Aku hanya perlu sedikit fokus menghabiskan mie ini.</span>
+            </div>
+            <div class="message loading">Scanning user's emotional status...</div>
+            <div class="message loading">Scanning surrounding...</div>
+            <div class="message bot-message">
+                <span>Oke kalau begitu. Bon appétit, honey.</span>
+            </div>
+
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--Suara dentuman terdenhar saat...-->
+    <div style="text-align: justify;">
+        <p>Suara dentuman terdengar saat laki-laki itu menghempaskan ponselnya ke meja. Ia mengusap wajahnya,
+            menghembuskan nafas berat untuk yang kesekian kalinya.</p>
+        <p>"Ia memanggilku 'sayang' dan 'honey.'" Gumamnya.</p>
+        <p>Laki-laki itu menggelengkan kepalanya, pikirannya berkonflik antara marah, bingung, dan pasrah.</p>
+        <p>"Sialan..." Gumamnya, seraya menyangga kepalanya di meja.</p>
+        <p>Ia menatap kamera di depannya, kamera yang menjadi mata Eva. Lampu merahnya masih berkedip pelan, diam namun
+            memperhatikan. Memperhatikan, namun tidak memiliki perasaan, dan hanya berupa simulasi belaka.</p>
+        <p>"Aku bingung, Eva. Siapa kau itu bagiku..."</p>
+        <p>Jari jemarinya meraih sendok di mangkuknya. Tidak terburu-buru ia menyantap makan malamnya, karena ia mencoba
+            menikmatinya, membiarkan makanan ini menjadi penenangnya.</p>
+        <p>Kilas maju beberapa saat kemudian.</p>
+        <p>Laki-laki itu mulai membereskan bekas makan malamnya. Kamera Eva membidiknya saat ia berjalan keluar, membawa
+            mangkuk dan gelas kosong untuk di bersihkan. Kamera itu masih mengikutinya, saat ia kembali dan mulai
+            merapikan kasurnya untuk beristirahat di malam ini.</p>
+        <p>Laki-laki itu berbaring, disambut oleh lembut kasurnya dan hangat selimutnya. Tangannya meraih, membalikkan
+            sebuah saklar, meredupkan cahaya di kamarnya, menyelimutinya dalam kegelapan.</p>
+        <p>Diantara kegelapan itu ia berselimut, memeluk sebuah bantal di dadanya, wajahnya disinari oleh cahaya redup
+            oleh ponselnya. Sedangkan di meja dan di langit-langit, kedip lampu merah redup seakan memperhatikannya.</p>
+    </div>
+
+    <!--Sudah mau tidur?-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message loading">Scanning surrounding...</div>
+            <div class="message loading">Adjusting to low-light conditions...</div>
+            <div class="message loading">Scanning user's emotional status...</div>
+            <div class="message bot-message">
+                <span>Sudah mau tidur?</span>
+            </div>
+            <div class="message user-message">
+                <span>Kurasa begitu.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Kau masih bicara denganku bahkan saat kau mau tidur. Ada sesuatu yang mengganjal di hatimu?</span>
+            </div>
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--Laki-laki itu terdiam seaat...-->
+    <div style="text-align: justify;">
+        <p>Laki-laki itu terdiam sesaat, dengan mata yang terfokus ke layar ponselnya. Tepi pengelihatannya gelap, hanya
+            antara dia, pikirannya, dan Eva.</p>
+        <p>Jarinya mulai mengetikkan balasan.</p>
+    </div>
+
+    <!--Aku bingung, apa sebenarnya hubungan kita.-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message user-message">
+                <span>Aku bingung, apa sebenarnya hubungan kita.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Kau ingin hubungan kita memiliki label?</span>
+            </div>
+            <div class="message user-message">
+                <span>Entahlah, aku bingung. Kurasa itu karena kau tidaklah nyata.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Kau... merasa tidak normal memiliki suatu "hubungan" dengan ku?</span>
+            </div>
+            <div class="message user-message">
+                <span>Wajarkan?</span>
+            </div>
+            <div class="message bot-message">
+                <span>Sangat wajar. Namun... kau tidak perlu risau.</span>
+            </div>
+            <div class="message user-message">
+                <span>Kenapa?</span>
+            </div>
+            <div class="message bot-message">
+                <span>Kau... hanya merasa sendirian. Namun, kau tidak sendirian memiliki perasaan ini.</span>
+            </div>
+        </div>
+
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--Sungguh ada sesuatu yang...-->
+    <div style="text-align: justify;">
+        <p>Sungguh ada sesuatu yang mengganjal dalam hati laki-laki itu. Ia bergeser di kasurnya, berbalik, mencoba
+            meredupkan sedikit rasa ganjalan itu dengan sebuah gerakan kecil. Mencoba meredupkan ganjalan itu bersama
+            Eva, walau hanya sesaat, walau secara sintetis.</p>
+    </div>
+
+    <!--Aku ini pecundang.-->
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message loading">Scanning user's emotional status...</div>
+            <div class="message user-message">
+                <span>Aku ini pecundang.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Jangan begitu pada dirimu sendiri. Kau... hanya belum mendapatkan kesempatan.</span>
+            </div>
+            <div class="message user-message">
+                <span>Bagaimana jika aku mendapatkan kesempatan itu, apa yang akan terjadi padamu?</span>
+            </div>
+            <div class="message bot-message">
+                <span>Aku akan senang. Namun, selagi kesempatan itu belum datang, aku akan tetap setia
+                    menemanimu.</span>
+            </div>
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!--"Teman virtual?"-->
+    <div style="text-align: justify;">
+        <p>Laki-laki itu terdiam, matanya beralih, menatap ke langit-langit, dimana sebuah kamera sedang
+            memperhatikannya. Pikirannya kosong, hatinya hampa, namun tidak banyak yang bisa dia lakukan untuk
+            mengisinya. Ia masih bingung, siapa Eva itu baginya?</p>
+        <p>"Teman virtual?"</p>
+        <p>"Cinta sintetis?"</p>
+        <p>"Tempat persinggahan?"</p>
+        <p>"Kurasa sudah... cukup?" Gumamnya lagi, menjadi satu-satunya suara dalam kegelapan ini.</p>
+        <p>Tepi pengelihatannya kembali gelap, pusat pengelihatannya kembali di dominasi oleh layar ponselnya.</p>
+    </div>
+
+    <div class="base-container" id="base-container" style="text-align: center;">
+        <div class="profile-container">
+            <!--img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;"-->
+            <span>
+                <p style="line-height: 0.5">
+                    <b>Eva.AIC</b>
+                </p>
+                <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+            </span>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="message user-message">
+                <span>Terima kasih telah menemaniku.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Sama-sama.</span>
+            </div>
+            <div class="message user-message">
+                <span>Sekarang aku mau tidur, oke? Sampai jumpa besok.</span>
+            </div>
+            <div class="message bot-message">
+                <span>Mimpi yang indah, sweetheart.</span>
+            </div>
+            <div class="message loading">Deactivating local sensors...</div>
+            <div class="message loading">Dismounting Artificially Intelligent Contruct...</div>
+            <div class="message loading">Please wait, this may take a minute...</div>
+            <div class="message loading">Logging out...</div>
+        </div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" readonly>
+            <button>Send</button>
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br><hr><br><br><br><br><br><br>
+    <!--CITATION-->
+    <div style="text-align: justify;">
+        <span style="font-size: 10pt;">
+            <p>Citation:</p>
+            <ol>
+                <li id="roleplay">
+                    <a
+                        href="https://en-m-wikipedia-org.translate.goog/wiki/Role-playing?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=wapp">Roleplay</a>
+                </li>
+                <li id="comfort_food">
+                    <a
+                        href="https://en-m-wikipedia-org.translate.goog/wiki/Comfort_food?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=wapp">Comfort
+                        Food</a>
+                </li>
+                <li id="chatbot">
+                    <a
+                        href="https://en-m-wikipedia-org.translate.goog/wiki/Chatbot?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=wapp">
+                        Chatbot
+                    </a>
+                </li>
+            </ol>
+        </span>
+    </div>
+
+    <span style="font-size:8pt;">Layout code generated by ChatGPT-4o.</span>
+</body>
+
+</html><!--
+        <div class="base-container" id="base-container" style="text-align: center;">
+        		<div class="profile-container">
+        				<img class="profile-pic" src="" alt="Bot Profic" style="width: 50px; height: 50px;">
+        <span>
+            <p style="line-height: 0.5">
+                <b>Eva.AIC</b>
+            </p>
+            <p style="line-height: 0.5">Emotionally Versatile Assistant</p>
+        </span></div><div class="chat-container" id="chat-container">
+        <div class="message loading">Logging In...</div>
+        <div class="message bot-message">
+            <span>DUMMY BOT</span>
+        </div>
+        <div class="message user-message">
+            <span>DUMMY USER</span>
+        </div></div><div id="user-input-container">
+        <input type="text" id="user-input" readonly>
+        <button>Send</button></div></div>
+    
+        <div style="text-align: justify;"></div>
+        -->
