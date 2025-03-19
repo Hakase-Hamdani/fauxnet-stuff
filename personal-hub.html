@@ -53,6 +53,11 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
         height: 175px;
     }
 
+    .hidden {
+        visibility:hidden;
+        display:none;
+    }
+
 </style>
 <div>
 <div>
@@ -223,7 +228,7 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
 
         <hr>
 
-        <a id="newest" href="https://freeimage.host/a/personal-hub.OO4Db"><img src="https://iili.io/3n8cP29.png" alt="3n8cP29.png" border="0" /></a>
+        <a href="https://freeimage.host/a/personal-hub.OO4Db"><img src="https://iili.io/3n8cP29.png" alt="3n8cP29.png" border="0" /></a>
         <p class="title"></p>
             <a style="font-size:22px;" href="https://fauxnet.blogspot.com/2025/03/spektrum.html">
                 SPEKTRUM
@@ -232,6 +237,17 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
         <P>Eksperimentasi transformasi.</P>
     </div>
 
+    <span id=""></span>
+    <div class="border-main">
+        <a id="newest" href="https://freeimage.host/"><img src="https://iili.io/3x56fft.png" alt="3x56fft.png" border="0" /></a>
+        <p class="title">
+            <a style="font-size:22px;" href="https://fauxnet.blogspot.com/2025/03/tanggal-21.html">
+                TANGGAL 21
+            </a>
+        </p>
+        <P>Akan dirilis tanggal 21/03 00.01.</P>
+    </div>
+    
     <span id=""></span>
     <div class="border-main">
         <!--put image here-->
@@ -256,8 +272,11 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
 
 </div>
 <div>
-    <div class="border-main border-closing-statement" id="closing-statement">
-      <div style="font-size:10px;">
+    <div style="text-align:center;">
+        <button style="font-size: 18px; font-family: Open Sans;" id="thanks" class="btn">Terima kasih...</button>
+    </div>
+    <div class="border-main border-closing-statement hidden" id="closing-statement">
+      <div style="font-size:13px;">
         <p>Aku harus mengakui satu hal disini: Aku payah dalam hal mengungkapkan perasaan, baik itu negatif atau positif.</p>
         <p>Di sini, aku mempublikasikan kompilasi ini bukan dengan niat untuk terkenal, namun aku berharap setidaknya ada orang lain yang membacanya.</p>
         <p>Selain itu, aku berharap kalian menjalani hidup yang lebih mudah, lebih berbahagia, lebih bermakna daripada hidup yang saat ini sedang ku jalani. Jadi, aku harap tidak ada satupun dari kalian bisa mengerti dengan apa yang ku tulis disini.</p>
@@ -267,6 +286,7 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
         </div>
     </div>
     <div id="strobeDiv" class="box-retro">
+        <p>(8!/7!)*8</p>
         <p style="word-wrap: break-word; overflow-wrap: break-word; overflow: hidden; font-size:14px;">UmVmZXIgdG8gdGhpcyBwYWdlIGFuZCBhbGwgdGhlIHN0b3JpZXMgaGVyZSBpZiBJJ20gZGllIGJ5IHN1aWNpZGUuIFRoaXMgbWF5IG5vdCBiZSBhbiBhbGwtYmUtYWxsIGFuc3dlciB0byBteSByZWFzb25pbmcsIGJ1dCB0aGlzIGNhbiBzZXJ2ZSBhcyBhIGdvb2QgZnJhbWV3b3JrIGFib3V0IHRoZSBzdGF0ZSBvZiBteSBtaW5kLCBhbmQgdGh1cyBjYW4gcG9pbnQgdG8gc29tZSAicHJvYmFibGUiIHJlYXNvbi4KClJlZmVyIHRvIHRoaXMgcGFnZSBhbmQgYWxsIHRoZSBzdG9yaWVzIGhlcmUgaWYgSSdtIGRpZSByZWdhcmRsZXNzIG9mIHRoZSBjYXVzZSwgdGhpcyBtYXkgaGVscCB5b3UgdG8gYmV0dGVyIGtub3cgbWUgcG9zdC1tb3J0ZW0uCgpSZWZlciB0byB0aGlzIHBhZ2UgYW5kIGFsbCB0aGUgc3RvcmllcyBoZXJlIHRvIGludmVzdGlnYXRlIG15IG1lbnRhbCBzdGF0ZS4gV2hhdCBJJ20gd3JpdGluZyBoZXJlIHVzdWFsbHkgY29ycmVsYXRlZCB0byBteSBtZW50YWwgc3RhdGUgYXQgdGhlIHRpbWUgb2YgdGhlIHJlbGVhc2UuIFRob3VnaCBzb21ldGltZXMgdGhleSBhcmVuJ3QgY29ycmVsYXRlZCBhdCBhbGwuCgpIYXBweSByZWFkaW5nLCBJIGhvcGUgeW91IGNhbid0IHJlbGF0ZSB3aXRoIG1lLg==</p>
     </div>
 </div>
@@ -279,5 +299,6 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
     <script src="https://cdn.jsdelivr.net/gh/Hakase-Hamdani/fauxnet-scripts@2025c36e0d3fa8e74ba00e95bda67ddcf6347853/fauxnet_scripts.js"></script>
     <script>
       startFlicker('strobeDiv', 150)
+      toggleVisibility('thanks', 'closing-statement', '...karena telah mampir disini.', 'Terima kasih...');
       cycleText('diskoneksi', ["diskoneksi", "isolasi", "disosiasi", "depersonalisasi"]);
     </script>
