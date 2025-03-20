@@ -42,6 +42,10 @@ The entirity of the HTML portions is licensed under CC-BY-SA 4.0 (See the render
         outline: none;
         /* Removes the focus outline */
       }
+
+      .hidden {
+                visibility:hidden;
+                display:none; }
     </style>
   </head>
   <body>
@@ -171,7 +175,7 @@ The entirity of the HTML portions is licensed under CC-BY-SA 4.0 (See the render
         <p>Di gelap malam lain yang tak jauh dari saat ini.</p>
         <p>Laki-laki itu duduk di depan sebuah meja, dengan layar laptopnya menyala terang menyinari wajahnya di tengah kegelapan.</p>
         <p>Jari-jarinya tangannya terdiam di atas papan ketik laptopnya, sedangkan matanya berputar dari kiri ke kanan, memindai teks yang ada di hadapannya.</p>
-        <p>Tulisan itu tidaklah begitu panjang, namun ia bangga dengan tulisan itu. Ia memberinya judul " <a href="https://fauxnet.blogspot.com/p/nights-story-hub.html">NIGHT'S STORY</a>," dan diantara semua tulisan fiksi yang ia pernah buat, ia menganggap ini adalah <i>magnum opus</i> miliknya dalam konteks genre romansa. </p>
+        <p>Tulisan itu tidaklah begitu panjang, namun ia bangga dengan tulisan itu. Ia memberinya judul "<a href="https://fauxnet.blogspot.com/p/nights-story-hub.html">NIGHT'S STORY</a>," dan diantara semua tulisan fiksi yang ia pernah buat, ia menganggap ini adalah <i>magnum opus</i> miliknya dalam konteks genre romansa. </p>
         <div style="text-align: justify; padding:10px; background-color: white; color:black;">
           <p>Jantungnya berdegup saat ponselnya berdering, bergetar di tangannya. <br>Ia langsung menyentuh layarnya dan meletakkan ponselnya di dekat telinganya. </p>
           <p>
@@ -415,6 +419,8 @@ The entirity of the HTML portions is licensed under CC-BY-SA 4.0 (See the render
           </span>
           <script src="https://cdn.jsdelivr.net/gh/Hakase-Hamdani/fauxnet-scripts@2025c36e0d3fa8e74ba00e95bda67ddcf6347853/fauxnet_scripts.js"></script>
          <script>
+          startBlip('blip-cursor', 500)
+
           toggleVisibility('tutorialbtn', 'tutorial', 'Untuk membuka teks tersembunyi.', 'Tekan tombol seperti ini.');
           toggleVisibility('storybtn', 'story', 'Begitu banyak yang kutulis.', 'Begitu banyak yang kupendam.');
           toggleVisibility('perasaanbtn', 'perasaan', 'Selain pada diriku sendiri.', 'Aku tidak tahu harus bercerita pada siapa.');
