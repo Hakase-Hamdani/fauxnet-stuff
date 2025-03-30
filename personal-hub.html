@@ -1,14 +1,17 @@
 <!--
-PERSONAL HUB page by Muhammad Hamdani and Synn "K" Atikka.
+PERSONAL HUB page by Pengkhayal Pasif and Synn Atikka.
 Unless otherwise noted, this entire page is licensed under CC BY-SA 4.0
 
 All the logos used here are hosted in https://freeimage.host.
-All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
+All the logos here designed Pengkhayal Pasif, licensed under CC BY-SA 4.0
 -->
 <style>
     body {
         background-color: black;
     }
+    /*p{
+        color: white;
+    }*/
     .border-main {
         border: 1px solid white;
         font-family: Open Sans;
@@ -41,10 +44,9 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
         box-sizing: border-box;
         color: black;
         font-family: Inconsolata;
-        font-size: 14pt;
         margin: 20px;
         padding: 10px;
-        text-align: center;
+        text-align: left;
         transition: background-color 0.1s ease-in-out;
     }
 
@@ -58,36 +60,132 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
         display:none;
     }
 
+    /*tab*/
+
+    .tabcontent{
+        background-color: salmon;
+        background-image: linear-gradient(0deg, rgba(33, 16, 14, 0.349) 2px, transparent 1px);
+        background-size: 100% 4px;
+        box-sizing: border-box;
+        color: black;
+        font-family: Inconsolata;
+        margin: 20px;
+        padding: 10px;
+        text-align: left;
+        transition: background-color 0.1s ease-in-out;
+    }
+
+    .tab {
+      overflow: hidden;
+      display: flex; flex-wrap: wrap; justify-content: center;
+      background-color: transparent;
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: 1px solid salmon;
+      outline: none;
+      cursor: pointer;
+      padding: 5px 5px;
+      transition: 0.3s;
+      color: salmon;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: rgb(79, 40, 35);
+      color: salmon;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: salmon;
+      color: black;
+    }
+
+
 </style>
 <div>
 <div>
+    
     <div style="text-align: center;">
         <img scr="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLzEC_rhIp-jSet9KhNFJZs8UYNaPakWeoBvF3cnWmRpRzD5ZiIpAJybCamqGew4UFgby1E6hTudh9ygqHhmnndcRkEitH_p2wUlHMmHdjtt8EJGkjcBX3xAOeU4GsfakJ1UvVLEHWiGOYABaqrYpf8MVa0XKO_qxrwa667tZfsk2_LijSlJKDoy_WOSU/s1470/drawing-2.png">
-        <img data-original-height="384" data-original-width="1470" height="168" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLzEC_rhIp-jSet9KhNFJZs8UYNaPakWeoBvF3cnWmRpRzD5ZiIpAJybCamqGew4UFgby1E6hTudh9ygqHhmnndcRkEitH_p2wUlHMmHdjtt8EJGkjcBX3xAOeU4GsfakJ1UvVLEHWiGOYABaqrYpf8MVa0XKO_qxrwa667tZfsk2_LijSlJKDoy_WOSU/w640-h168/drawing-2.png" width="640" />
+        <img data-original-height="384" data-original-width="1470" height="230" width="876" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLzEC_rhIp-jSet9KhNFJZs8UYNaPakWeoBvF3cnWmRpRzD5ZiIpAJybCamqGew4UFgby1E6hTudh9ygqHhmnndcRkEitH_p2wUlHMmHdjtt8EJGkjcBX3xAOeU4GsfakJ1UvVLEHWiGOYABaqrYpf8MVa0XKO_qxrwa667tZfsk2_LijSlJKDoy_WOSU/w640-h168/drawing-2.png"/>
     </div>
 
-    <p style="text-align: center; color: salmon;"><i>Ringkasan diriku.</i></p>
+    <br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <p style="text-align: center; color: salmon;">keep scrolling down/<span style="background: red; color: black;">/terus geser ke bawah</span></p>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br>
 
-    <div class="box-retro">
-        <p>Jika kau <i>mengerti</i>, maka kau temanku.<br><span style="background: red;">Jika kau asal percaya, maka bodoh sekali kamu.</span></p>
+    <div>
+        <p style="text-align: center; color: salmon;">Jadi, apa <i>ini</i> sebenarnya? Ada beberapa jawaban untuk itu, silahkan pilih di bawah.</p>
+        
+        <!--TAB-->
+        <!--TAB BUTTON-->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, '0')" id="defaultOpen">???</button>
+            <button class="tablinks" onclick="openTab(event, '1')">Sebuah jawaban singkat.</button>
+            <button class="tablinks" onclick="openTab(event, '2')">Jawaban berupa kata-kata yang mungkin ada kaitannya.</button>
+            <button class="tablinks" onclick="openTab(event, '3')">Sebuah cerita pendek yang berakhir tiba-tiba.</button>
+        </div>
+        <!--TAB BUTTON-->
 
-        <p>Jika kau <i>memahami</i>, maka aku turut kasihan padamu.<br><span style="background: red;">Jika kau tidak mengerti, maka beruntunglah kamu.</span></p>
-
-        <p>Jika kau <i>murka</i> padaku, kumohon simpan untuk dirimu sendiri.<br><span style="background: red;">Jika kau tidak marah, maka aku akan berterima kasih secara pribadi.</span></p>
-
-        <p>Aku ingin dimengerti.<br><span style="background: red;">Aku tidak ingin dipahami.</span></p>
-
-        <p>Apa yang terjadi disini nyata.<br><span style="background: red;">Apa yang ditulis di sini tidak benar adanya.</span></p>
-
-        <p>Maafkan aku./<span style="background: red;">/Maafkan aku.</span></p>
-
+        <div id="0" class="tabcontent">
+            <br><br>
+            <p>keep scrolling down to see it for yourself<span style="background-color: red; color: black;">/terus geser ke bawah untuk melihat sendiri</span></p>
+            <br><br>
+        </div>
+        
+        <div id="1" class="tabcontent">
+            <p>Hanya sekumpulan cerita tentang apa yang <i>telah terlewati</i>, <i>semoga terjadi</i>, dan <i>banyak yang hanya imanjinasi</i>.</p>
+        </div>
+    
+        <div id="2" class="tabcontent">
+            <p>Jika kau <i>mengerti</i>, maka kau temanku.<br><span style="background: red;">Jika kau asal percaya, maka bodoh sekali kamu.</span></p>
+        
+            <p>Jika kau <i>memahami</i>, maka aku turut kasihan padamu.<br><span style="background: red;">Jika kau tidak mengerti, maka beruntunglah kamu.</span></p>
+        
+            <p>Jika kau <i>murka</i> padaku, kumohon simpan untuk dirimu sendiri.<br><span style="background: red;">Jika kau tidak marah, maka aku akan berterima kasih secara pribadi.</span></p>
+        
+            <p>Aku ingin dimengerti.<br><span style="background: red;">Aku tidak ingin dipahami.</span></p>
+        
+            <p>Apa yang terjadi disini nyata.<br><span style="background: red;">Apa yang ditulis di sini tidak benar adanya.</span></p>
+        
+            <p><span id="maaf1">Maafkan aku./</span><span id="maaf2" style="background: red;">/Maafkan aku.</span></p>
+        </div>
+    
+        <div id="3" class="tabcontent">
+            <p>Di suatu masa, hiduplah seorang laki-laki. Dirinya pendiam, pemalu, selalu memandang rendah dirinya sendiri. Begitu banyak yang ingin ia ucapkan, yang ingin ia ceritakan, yang ingin ia bagikan. Namun, terpendam rasa takut dalam dirinya. Rasa takut akan <i id="tab3">kesalahpahaman</i>.</p>
+            <p>Jadi, ia buka layar laptopnya, kadang ia juga mengetik di ponselnya. Teks disusun menjadi kalimat, menjadi panjang berbaris-baris menjadi paragraf, paragraf kemudian ditata menjadi cerita, di kaburkan oleh bumbu khayalan, surealisme, dan estetika yang membingungkan. Entah ada tidak ada yang membacanya, ia tidak peduli.</p>
+            <p>Ia ingin ceritanya <i id="mengerti">dimengerti</i>.</p>
+        </div>
+    
+        <!--TAB-->
     </div>
 
-    <div class="border-main border-pink">
-        <p>&#x26A0<br>
-            <a href="#newest"> Klik/tekan ini untuk menuju ke entri terbaru </a>
-            <br>&#x26A0</p>
+    <br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <div class="tab">
+        <button style="font-size: 12px; width: 100%;" onclick="location.href='#newest'" href="">Klik/tekan ini untuk menuju ke entri terbaru</button>
     </div>
+    <p style="color: black;
+              background-color: red;
+              text-align: center;
+              font-size: 12px;
+              padding: 5px 5px;">
+              <b>atau, terus geser ke bawah untuk melihat keseluruhan isi</b>
+            </p>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br>
+
     <!--HEADER-->
 
     <div class="border-main">
@@ -221,8 +319,7 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
         <P>Miskonsepsi intimasi.</P>
 
         <hr>
-
-        <a href="https://freeimage.host/a/personal-hub.OO4Db"><img src="https://iili.io/3n8cP29.png" alt="3n8cP29.png" border="0" /></a>
+        <a href="https://freeimage.host/a/personal-hub.OO4Db"><img src="https://iili.io/3TfPFyJ.png" alt="3TfPFyJ.png" border="0" /></a>
         <p class="title"></p>
             <a style="font-size:22px;" href="https://fauxnet.blogspot.com/2025/03/spektrum.html">
                 SPEKTRUM
@@ -233,13 +330,14 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
 
     <span id=""></span>
     <div class="border-main border-pink">
-        <a id="newest" href="https://freeimage.host/"><img src="https://iili.io/3x56fft.png" alt="3x56fft.png" border="0" /></a>
+        <a id="newest" href="https://freeimage.host/a/personal-hub.OO4Db"><img src="https://iili.io/3Tf4CAv.png" alt="3Tf4CAv.png" border="0" /></a>
         <p class="title">
             <a style="font-size:22px;" href="https://fauxnet.blogspot.com/2025/03/tanggal-21.html">
                 TANGGAL 21
             </a>
         </p>
         <p id="21" style="color: salmon;">ulang tahun</a></p>
+<script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="6905921" class="tickcounter" style="display:block; left:0; width:50%; height:0; position:relative; padding-bottom:12%; margin:0 auto;" title="My countdown" href="//www.tickcounter.com/">My countdown</a><br>
     </div>
     
     <span id=""></span>
@@ -266,8 +364,8 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
 
 </div>
 <div>
-    <div style="text-align:center;">
-        <button style="font-size: 18px; font-family: Open Sans; color: black;" id="thanks" class="btn">Terima kasih...</button>
+    <div class="tab">
+        <button id="thanks" class="btn">Terima kasih...</button>
     </div>
     <div class="border-main border-closing-statement hidden" id="closing-statement">
       <div style="font-size:13px;">
@@ -280,8 +378,8 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
         </div>
     </div>
     <div id="strobeDiv" class="box-retro">
-        <p>(8!/7!)*8</p>
-        <p style="word-wrap: break-word; overflow-wrap: break-word; overflow: hidden; font-size:14px;">UmVmZXIgdG8gdGhpcyBwYWdlIGFuZCBhbGwgdGhlIHN0b3JpZXMgaGVyZSBpZiBJJ20gZGllIGJ5IHN1aWNpZGUuIFRoaXMgbWF5IG5vdCBiZSBhbiBhbGwtYmUtYWxsIGFuc3dlciB0byBteSByZWFzb25pbmcsIGJ1dCB0aGlzIGNhbiBzZXJ2ZSBhcyBhIGdvb2QgZnJhbWV3b3JrIGFib3V0IHRoZSBzdGF0ZSBvZiBteSBtaW5kLCBhbmQgdGh1cyBjYW4gcG9pbnQgdG8gc29tZSAicHJvYmFibGUiIHJlYXNvbi4KClJlZmVyIHRvIHRoaXMgcGFnZSBhbmQgYWxsIHRoZSBzdG9yaWVzIGhlcmUgaWYgSSdtIGRpZSByZWdhcmRsZXNzIG9mIHRoZSBjYXVzZSwgdGhpcyBtYXkgaGVscCB5b3UgdG8gYmV0dGVyIGtub3cgbWUgcG9zdC1tb3J0ZW0uCgpSZWZlciB0byB0aGlzIHBhZ2UgYW5kIGFsbCB0aGUgc3RvcmllcyBoZXJlIHRvIGludmVzdGlnYXRlIG15IG1lbnRhbCBzdGF0ZS4gV2hhdCBJJ20gd3JpdGluZyBoZXJlIHVzdWFsbHkgY29ycmVsYXRlZCB0byBteSBtZW50YWwgc3RhdGUgYXQgdGhlIHRpbWUgb2YgdGhlIHJlbGVhc2UuIFRob3VnaCBzb21ldGltZXMgdGhleSBhcmVuJ3QgY29ycmVsYXRlZCBhdCBhbGwuCgpIYXBweSByZWFkaW5nLCBJIGhvcGUgeW91IGNhbid0IHJlbGF0ZSB3aXRoIG1lLg==</p>
+        <p style="text-align: center;">(8!/7!)*8</p>
+        <p style="text-align: justify; word-wrap: break-word; overflow-wrap: break-word; overflow: hidden; font-size:14px;">UmVmZXIgdG8gdGhpcyBwYWdlIGFuZCBhbGwgdGhlIHN0b3JpZXMgaGVyZSBpZiBJJ20gZGllIGJ5IHN1aWNpZGUuIFRoaXMgbWF5IG5vdCBiZSBhbiBhbGwtYmUtYWxsIGFuc3dlciB0byBteSByZWFzb25pbmcsIGJ1dCB0aGlzIGNhbiBzZXJ2ZSBhcyBhIGdvb2QgZnJhbWV3b3JrIGFib3V0IHRoZSBzdGF0ZSBvZiBteSBtaW5kLCBhbmQgdGh1cyBjYW4gcG9pbnQgdG8gc29tZSAicHJvYmFibGUiIHJlYXNvbi4KClJlZmVyIHRvIHRoaXMgcGFnZSBhbmQgYWxsIHRoZSBzdG9yaWVzIGhlcmUgaWYgSSdtIGRpZSByZWdhcmRsZXNzIG9mIHRoZSBjYXVzZSwgdGhpcyBtYXkgaGVscCB5b3UgdG8gYmV0dGVyIGtub3cgbWUgcG9zdC1tb3J0ZW0uCgpSZWZlciB0byB0aGlzIHBhZ2UgYW5kIGFsbCB0aGUgc3RvcmllcyBoZXJlIHRvIGludmVzdGlnYXRlIG15IG1lbnRhbCBzdGF0ZS4gV2hhdCBJJ20gd3JpdGluZyBoZXJlIHVzdWFsbHkgY29ycmVsYXRlZCB0byBteSBtZW50YWwgc3RhdGUgYXQgdGhlIHRpbWUgb2YgdGhlIHJlbGVhc2UuIFRob3VnaCBzb21ldGltZXMgdGhleSBhcmVuJ3QgY29ycmVsYXRlZCBhdCBhbGwuCgpIYXBweSByZWFkaW5nLCBJIGhvcGUgeW91IGNhbid0IHJlbGF0ZSB3aXRoIG1lLg==</p>
     </div>
 </div>
 </div>
@@ -296,4 +394,30 @@ All the logos here designed Muhammad Hamdani, licensed under CC BY-SA 4.0
       toggleVisibility('thanks', 'closing-statement', '...karena telah mampir disini.', 'Terima kasih...');
       cycleText('diskoneksi', ["diskoneksi", "isolasi", "disosiasi", "depersonalisasi"]);
       cycleText('21', ["ulang tahun", "ringkasan", "satu tahun", "melihat ke belakang"]);
+      cycleText('tab3', ["kesalahpahaman", "permusuhan", "amarah", "mengecewakan"]);
+      cycleText('tab3', ["kesalahpahaman", "permusuhan", "amarah", "mengecewakan"]);
+      cycleText('tab0', ["?", "??????", "???", "??????????"]);
+      cycleText('mengerti', ["dimengerti", "tidak dimengerti"]);
+      
+      function openTab(evt, tabName) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+      
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+      
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        } 
+      document.getElementById("defaultOpen").click();
     </script>
