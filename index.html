@@ -118,7 +118,7 @@ All the logos here designed Pengkhayal Pasif, licensed under CC BY-SA 4.0
     <br><br><br>
     <br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
-    <p style="text-align: center; color: salmon;">keep scrolling down/<span style="background: red; color: black;">/terus geser ke bawah</span></p>
+    <p style="text-align: center; color: salmon;"><span id="down1">keep scrolling down/</span><span id="down2" style="background: red; color: black;">/terus geser ke bawah</span></p>
     <br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
     <br><br><br>
@@ -173,14 +173,14 @@ All the logos here designed Pengkhayal Pasif, licensed under CC BY-SA 4.0
     <br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
     <div class="tab">
-        <button style="font-size: 12px; width: 100%;" onclick="location.href='#newest'" href="">Klik/tekan ini untuk menuju ke entri terbaru</button>
+        <button style="font-size: 14px; width: 100%;" onclick="location.href='#newest'" href="">klik/tekan ini untuk menuju ke entri terbaru</button>
     </div>
     <p style="color: black;
               background-color: red;
               text-align: center;
-              font-size: 12px;
+              font-size: 14px;
               padding: 5px 5px;">
-              <b>atau, terus geser ke bawah untuk melihat keseluruhan isi</b>
+              terus geser ke bawah untuk melihat keseluruhan <span id="redisi">isi</span>
             </p>
     <br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
@@ -398,7 +398,11 @@ All the logos here designed Pengkhayal Pasif, licensed under CC BY-SA 4.0
       cycleText('tab3', ["kesalahpahaman", "permusuhan", "amarah", "mengecewakan"]);
       cycleText('tab0', ["?", "??????", "???", "??????????"]);
       cycleText('mengerti', ["dimengerti", "tidak dimengerti"]);
+      cycleText('down1', ["keep scrolling down/", "terus geser ke bawah/"]);
+      cycleText('down2', ["/terus geser ke bawah", "/keep scrolling down"]);
+      cycleText('redisi', ["isi", "curhatan", "cerita", "entri"]);
       
+
       function openTab(evt, tabName) {
           // Declare all variables
           var i, tabcontent, tablinks;
