@@ -1,0 +1,1186 @@
+<!--AKSES MEMORI ACAK © 2025 by Pengkhayal Pasif is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: black;
+        }
+        .just {
+            text-align: justify;
+            color: white;
+        }
+
+        .r {
+            text-align: right;
+            color:white;
+        }
+
+        .l {
+            text-align: left;
+            color: white;
+        }
+
+        .m {
+            text-align: center;
+            color: white;
+        }
+
+        .whit {
+            color: black;
+        }
+
+        .com {
+            text-align: left;
+            color: salmon;
+            border: 1px salmon solid;
+            min-height: 300px;
+            padding:20px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .tran {
+            color: black;
+            background-color: red;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .miss {
+            color: red;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .tb {
+            background-color: salmon;
+            border: 1px solid salmon;
+            outline: none;
+            padding: 5px;
+            margin: 10px;
+            transition: 0.3s;
+            color: black;
+            cursor: pointer;
+        }
+
+        .red-gradient {
+            background: linear-gradient(to bottom, white, red); /* Define color gradient */
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; /* Make text transparent so gradient shows */
+        }
+
+        .two-columns-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+        }
+
+        .two-columns-grid > div {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #output {
+            height: 200px;
+            overflow: auto;
+            white-space: pre;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: 25px;
+            border: 1px solid white;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+
+    
+        .hidden {
+            visibility:hidden;
+            display:none; }
+    </style>
+  
+</head>
+  <body>
+    <span><!--more--></span>
+
+    <div id="tutorial-div" style="color: salmon; border: 1px salmon solid; margin: 10px; padding: 20px;">
+        <h2 id="ttl">AKSES MEMORI ACAK</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>LISENSI</h3>
+        <div>
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a style="color: white;" property="dct:title" rel="cc:attributionURL" href="https://fauxnet.blogspot.com/2025/04/akses-memori-acak.html">AKSES MEMORI ACAK</a> by <a style="color: white;" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fauxnet.blogspot.com/p/tentang-ku.html">Pengkhayal Pasif</a> is licensed under <a style="color: white;"  href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
+        </div>
+        <p style="border: 1px solid salmon; text-align: center;">Bagian dari <a style="color: white;"
+            href="https://fauxnet.blogspot.com/p/personal-hub.html">PERSONAL</a></p><span></span>
+        <br>
+        <h3>TUTORIAL</h3>
+        <p>Jika kau menemui tombol dengan karakter <b>>>></b> dan berkedip seperti dibawah.</p>
+        
+        <button class="tb" id="tutorial"><b>Tekan untuk melanjutkan cerita>>></b></button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+    </div>
+
+    <div id="tab1" style="display: none;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="just">
+            <p>Redup suara hujan di luar, berbintik-bintik airnya membasahi kaca jendela yang menyekat tempat hidupnya dengan dunia luar yang tak acuh. Redup cahaya ungu dan violet menembus kaca jendelanya, redup bagai cahaya lampu tidur, namun bergerak berdansa, mengganggu seperti iklan.</p>
+
+            <p>Ada cahaya lain yang menerangi wajah laki-laki itu. Ia duduk di sudut ruangan, punggungnya membungkuk, jarinya membeku, retina matanya dibakar oleh terang cahaya layar CRT yang menyala menerangi wajahnya.</p>
+    
+            <p>Ada cahaya lain yang menerangi wajah laki-laki itu. Ia duduk di sudut ruangan, punggungnya membungkuk, jarinya membeku, retina matanya dibakar oleh terang cahaya layar CRT yang menyala menerangi wajahnya.</p>
+    
+            <p>Ia ingin mengetik sesuatu. Namun sesuatu itu tidak muncul, tidak terbesit dalam pikirannya. Yang menemaninya hanya sepetak layar putih yang menyilaukan mata, dan sebuah kursor hitam yang terus berkedip, mengejek kekosongan pikirannya.</p>
+        </div>
+    
+        <div style="height: 200px; background-color: white; padding: 10px; margin:25px;">
+            <span id="blip-cursor" style="color: black;"><b>|</b></span>
+        </div>
+    
+        <div class="just">
+            <p>Ia mengedipkan matanya, terasa perih dan panas.</p>
+    
+            <p>Ia memejamkan matanya sesaat, bersandar dan menarik nafas dalam. Pandangannya menghitam, gelap, ditutupi oleh kelopak matanya.</p>
+    
+            <p>Ia bisa mendengar suara samar-samar, berlapis desis statis radio. Ada yang sedang bicara, walau itu suara dia, itu bukanlah dia. Gemuruh hujan perlahan berubah dari redup menjadi nyaring seakan atapnya ada tepat di atas kepalanya. Sebuah hentakkan kecil mengguncang tubuhnya, membuka matanya. Ia sudah tidak berada di ruangannya.</p>
+    
+            <p>Di sekelilingnya ada layar-layar LCD monokrom. Ini adalah kali keduanya ia melihat jenis monitor ini sedekat ini. Monitor-monitor itu berpendar, masing-masing berwarna beda.</p>
+    
+            <p>Matanya beralih menatap lurus kedepan, disambut, atau di lindungi oleh selembar kaca yang basah karena hujan di luar, sedangkan lengan penyapu bergerak dari kiri ke kanan, berulang, mencoba menyingkirkan air hujan dari menghalangi pandangannya.</p>
+    
+            <p class="r">"Akhirnya kau bangun."</p>
+    
+            <p class="l">"Kau lagi? Ah... Tidak ada yang nyata di sini... Ini hanya pikiranku saja."</p>
+    
+            <p>Di sampingnya duduk seorang laki-laki yang tidak asing lagi. Penampilannya tidak hanya mirip, namun sama persis dengan dirinya. Tata bicaranya benar-benar mengikuti tata bicara dirinya saat ia menggumam sendiri. Laki-laki itu tidak pernah memberinya nama, hanya sekedar menyebutnya sebagai cerminannya. Karena laki-laki itu, dan... orang itu, adalah dua sisi dari orang yang sama.</p>
+    
+            <p class="l">"Aku... ini... ini daydream." Gumam laki-laki itu. Matanya terus berputar, memandang lanskap di sekitarnya namun tidak tahu harus berfokus kemana.</p>
+    
+            <p class="r">"Atau bahkan depersonalisasi, mungkin diikuti oleh derealisasi." Celetuk cerminannya tanpa mengalihkan pandangannya, tangannya tetap erat menggenggam lingkaran kemudinya.</p>
+    
+            <p class="l">"Aku sudah sakit jiwa." Hela nafas laki-laki itu sambil menggelengkan kepalanya.</p>
+    
+            <p class="r">"Hei, tenanglah. Tidak ada orang yang tidak rusak, kau hanya lebih jujur tentang kerusakanmu sendiri."</p>
+    
+            <p>Sesekali terasa hentakkan, guncangan kecil. Hanya ada suara gemuruh hujan dan gemuruh mesin yang menemani mereka dalam keheningan sementara ini. Cerminannya fokus mengemudi, sedangkan laki-laki itu memandang keluar dari balik kaca jendela. Apapun ini, di manapun ini, ini tidak terlihat benar.</p>
+    
+            <p>Langit abu-abu pekat, hujan lebat terus menerus seakan tak pernah berhenti, namun di kiri kanan tunggangan mereka berbaris panel-panel yang menatap ke atas, walau tak ada cahaya surya untuk di tangkap.</p>
+    
+            <p class="r">"Jangan terlalu di pikirkan, itu semua hanya khayalan kita belaka." Celetuk cerminannya.</p>
+    
+            <p class="r">"Tapi hei, jika kau mau menempelkan sebuah simbolisme kepada ini semua, silahkan saja." Cerminannya menatapnya sesaat.</p>
+    
+            <p>Tak lama kemudian mereka tiba di sebuah rumah kayu tua. Samar warnanya dari balik hujan yang deras ini, namun ia merasa mengenalnya.</p>
+    
+            <p class="l">"Apa yang kita lakukan disini?" Tanya laki-laki itu walaupun ia sudah mengetahui jawabannya.</p>
+    
+            <p class="r">"Membantumu menulis ceritamu." Jawab cerminannya. Jawaban sedikit berbeda dari apa yang ada di benaknya. Di parafrase sedemikian rupa.</p>
+    
+            <p>Hujan dress membasahi punggung mereka saat mereka berlari keluar dari mesin tingganggan mereka menuju rumah tua itu. Cerminannya hanya diam dengan mulut yang tersegel, hanya mengamati. Sedangkan laki-laki itu terpana untuk sesaat.</p>
+    
+            <p>Jemarinya melebar saat ia menekan telapak tangannya ke dinding depan rumah itu. Teksturnya begitu nyata, walau ini hanyalah rekonstruksi belaka. Jemari dan telapak tangannya bisa merasakan, kasar gesekan dari cat yang terkelupas, dan licin tak rata dari bagian yang masih utuh. Ini adalah licin tak rata yang familiar dari cat minyak yang memiliki warna yang tak asing lagi.</p>
+    
+            <p>Suara derit menyela deras gemuruh hujan, berat momentumnya terasa familiar saat ia mendorong pintunya, di sambut oleh gelap gulita yang berantakan. Tikar plastik di bawah kakinya sobek, terkelupas, rapuh karena tua.</p>
+    
+            <p>Cerminannya terus mengikutinya, walau semakin dalam mereka berdua melangkah. Sesekali kilat petir menembus kaca jendela, memberikan kilasan kekacauan, berserakan sampah-sampah, debu yang menyumbat nafas, dan coretan-coretan dinding yang tidak pantas.</p>
+    
+            <p class="l">"Ini... Ini kamarku dulu." Gumam laki-laki itu.</p>
+    
+            <p>Mereka tiba di sebuah ruangan, hanya berdinding triplek tipis, dengan deras hujan yang menyusup masuk lewat jendela yang terbuka, di terpa oleh angin badai di luar. Diantara gemuruh hujan dan badai, suara derit ikut meramaikan, saat laki-laki itu menarik jendela itu, menutup bingkainya. Kacanya bersudut tajam karena pecah, namun masih ada cukup sisa kaca untuk menghalangi terpaan angin dan air hujan.</p>
+    
+            <p>Tidak banyak yang tersisa di sini, hanya sebuah kasur yang kainnya sudah sobek dan membusuk, sebuah lemari laci yang terbuka, sebuah meja dengan komputer di atasnya, dan beberapa tape drive dengan pita yang longgar.</p>
+    
+            <p class="l">"Tidak banyak yang tersisa disini, tidak banyak yang tersisa untuk di tulis." Ujar laki-laki itu seraya berbalik ke arah cerminannya.</p>
+    
+            <p class="r">"Masih ada sesuatu." Jawab cerminannya lembut, tangannya menjulur menunjuk.</p>
+    
+            <p>Mata laki-laki itu mengikuti arah tunjuk cerminannya, dan jarinya mengarah ke komputer di atas meja. Ia berlutut, tangannya menyapu hitam kotoran yang menutupi tabung layar CRT itu, dan menyapu menyingkirkan sampah-sampah yang menutupi papan ketiknya. Di bawah meja itu ternyata ada seperangkat alat elektronik, sebuah CPU berbentuk kubus. Jarinya menekan sebuah tombol di CPU itu. Gemuruh hujan dan angin di luar sekarang di ramaikan lagi, oleh suara deru kipas, dan derit diska. Layar CRT itu menyala cerah, statis, kemudian berubah menjadi hitam.</p>
+        </div>
+    
+        <div class="com">
+            <p>password/<span class="tran">/kata kunci</span></p>
+            <span>>:</span><span id="blip-com">_</span>
+        </div>
+    
+        <div class="just">
+            <p>Laki-laki itu tanpa ragu duduk di depan meja itu, di lantai yang kotor, tangannya dengan lincah mengetik di papan ketik itu. Sedangkan cerminannya, ia masih berdiri, menelisik menelusuri jika ada sesuatu yang tertinggal atau tersisa di dalam lemari laci.</p>
+        </div>
+
+        <div class="com">
+            <p>loading personal accessor/<span class="tran">/memuat pengakses pribadi </span></p>
+            <p>voice command activated/<span class="tran">/perintah suara aktif</span></p>
+            <p>loading interface/<span class="tran">/memuat antarmuka</span></p>
+            <p>please load a cassette to begin/<span class="tran">/silahkan muat sebuah kaset untuk memulai</span></p>
+        </div>
+
+        <div class="just">
+            <p>Belum sempat laki-laki itu berucap, cerminannya sudah memberikannya sebuah tape drive. Tape drive itu tidak memiliki label, dengan pita yang tampak kusut dan di gulung ulang sebisanya saja.</p>
+
+            <p class="l">"Terima kasih." Ujar laki-laki itu.</p>
+
+            <p class="r">Cerminannya hanya mengangguk.</p>
+
+            <p>Laki-laki itu memasukkan tape itu ke dalam slot di CPU komputer yang sedang di hadapinya. Layarnya kembali berganti.</p>
+        </div>
+
+        <div class="com">
+            <p>tape inserted/<span class="tran">/kaset terdeteksi </span></p>
+            <p>reading/<span class="tran">/membaca</span></p>
+            <p>physical damage detected/<span class="tran">/kerusakan fisik terdeteksi</span></p>
+            <p>data corrupted, attempt to recover/<span class="tran">/data korup, mencoba memulihkan</span></p>
+        </div>
+
+        <div class="just">
+            <p class="l">"Jadi... Apa ini sebenarnya?" Tanya laki-laki itu, mengalihkan perhatiannya ke cerminannya.</p>
+
+            <p class="r">Cerminannya menjawab hanya dengan menunjuk ke arah layar.</p>
+
+            <p>Laki-laki itu kembali mengalihkan perhatiannya ke layar komputer itu.</p>
+        </div>
+
+        <div class="com">
+            <p>memory scrambled/<span class="tran">/memori teracak</span>
+            </p>
+            <p>need search query/<span class="tran">/perlu kueri pencarian </span>
+            </p>
+            <p>waiting query/<span class="tran">/menunggu kueri</span>
+            </p>
+            <p>voice activation is active/<span class="tran">/aktivasi suara aktif</span>
+            </p>
+            <p>please say "query" to activate the listening/<span class="tran">/silakan katakan "kueri" untuk mengaktifkan perintah suara </span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="l">"Ini serius?" Laki-laki itu kembali berbalik.</p>
+
+            <p class="r">Cerminannya melangkah, duduk di samping laki-laki itu, ikut duduk di lantai.</p>
+
+            <p class="r">"Ya." Jawabnya lembut.</p>
+
+            <p class="l">"Apa yang harus ku ucapkan?" Tanya laki-laki itu, tanpa pernah mengalihkan pandangannya.</p>
+
+            <p class="r">"Apa saja."</p>
+
+            <p class="l">"Tapi apa?"</p>
+
+            <p class="r">"Misalnya... Sesuatu yang saat ini ingin kau tulis."</p>
+
+            <p class="l">"Tapi apa yang saat ini ingin ku tulis?" Tanya laki-laki itu, suara mengecil, nadanya tertekan. Ia tahu apa yang cerminannya tahu, tetapi ia tidak mau mengaku.</p>
+
+            <p class="r">"Tentang orang tua kita." Cerminannya mengucapkan apa yang ada di pikiran mereka. Nadanya halus, tidak menghakimi.</p>
+
+            <p>Laki-laki itu langsung memalingkan wajahnya, kembali menatap monitor komputer yang sedang di hadapinya. Ia terdiam sejenak, tepi pengelihatannya memburam, matanya memfokus, walau hilang sedikit tekanan yang di rasakan jarinya saat ia menjauhkan tangannya dari papan ketik komputer itu. Ia sudah tahu akan jawaban itu, karena mereka berdua adalah orang yang sama. Namun, ia takut akan jawaban itu. Takut akan memori yang berat.</p>
+
+            <p>Momen berlalu, berapa lama tidak tahu. Bahkan gemuruh hujan dan angin, hentakkan guntur, kilatan petir, semua tidak menggangu. Karena, untuk sesaat, mereka berdua membiarkan diri mereka tersapu.</p>
+
+            <p>Mulut laki-laki itu perlahan membuka, tak bersuara, tak bernafas, ragu. Sampai akhirnya, pita suaranya mulai bergetar.</p>
+
+            <p class="l">"Kueri: masa duka." Ucap laki-laki itu pelan, suaranya ditenggelamkan lingkungan.</p>
+
+        </div>
+
+        <div class="com">
+            <p>searching for "masa duka"/<span class="tran">/mencari "masa duka"</span>
+            </p>
+            <p>found more connected queries/<span class="tran">/ditemukan kueri terkoneksi </span>
+            </p>
+            <p>listing/<span class="tran">/daftar</span>
+            </p>
+            <p>"fragmentasi"</p>
+        </div>
+
+        <div class="just">
+            <p class="l">"Maksudnya?" Laki-laki itu kembali menatap cerminannya, menatap bingung, walau ia tahu cerminannya juga bingung.</p>
+
+            <p class="r">"Cukup ikuti saja." Sahut lembut cerminannya, meyakinkannya.</p>
+
+            <p>Laki-laki itu mengalihkan perhatiannya kembali ke layar komputer itu, merah di atas hitam tulisannya terukir. Layar itu diam tak berkedip, menunggu tanpa menghakimi. Laki-laki itu menarik nafas, menahannya untuk sesaat.</p>
+
+            <p class="l">"Kueri: fragmentasi." Akhirnya laki-laki itu menghembuskan nafasnya yang tertahan.</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "fragmentasi"/<span class="tran">/mencari "fragmentasi"</span>
+            </p>
+            <p>memory fragmentation detected/<span class="tran">/fragmentasi memori terdeteksi </span>
+            </p>
+            <p>listing all found memories/<span class="tran">/daftar seluruh memori yang ditemukan</span>
+            </p>
+                xx-xx-2011-a
+                <br>xx-xx-2011-c
+                <br>xx-xx-2015-a
+                <br>xx-xx-2015-b
+                <br>xx-xx-2015-c
+                <br>xx-xx-2015-d
+                <br>xx-xx-2015-e
+            <br>
+            <p>fragmented memories aren't associated with any queries and have to be explored manually/<span class="tran">/memori terfragmentasi tidak berkaitan dengan kueri apapun dan harus di eksplorasi secara manual</span>
+            </p>
+            <p>waiting for query/<span class="tran">/menunggu kueri</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="l">"A... Aku melupakan semua itu?" Tanya laki-laki itu, seraya berpaling kembali menatap cerminannya.</p>
+            
+            <p class="l">"Aku... Aku melupakan mereka semua?" Tanyanya, saat dihadapkan dengan fragmentasi yang menuntunnya pada implikasi, bahwa ia sudah lupa.
+
+            </p>
+
+            <p class="l">"Apakah aku... Aku anak yang..." Belum sempat ia menyelesaikan kata-katanya.</p>
+
+            <p class="r">"Tidak begitu." Sahut cerminannya, sambil merangkul memeluknya.</p>
+
+            <p>Rasanya hanya bagai emulasi. Tak nyata, tekanan dan kehangatannya tidak ada, baik itu dari tubuh mereka yang saling merapat, atau tangan cerminannya yang melingkarinya. Semua itu hanya emulasi, bagaimana mereka menayangkan bagaimana sebuah pelukan itu.</p>
+
+            <p class="r">"Tidak perlu berpikir yang tidak-tidak." Sambung cerminannya lembut, mencoba menenangkan belahan dirinya ini.</p>
+
+            <p class="r">"Mungkin kau lupa karena respon trauma, atau karena hidupmu terus bergerak maju tanpa jeda..."</p>
+            
+            <p class="r">"Atau... Atau hanya karena... Kau mulai menua, bertambah usia."</p>
+
+            <p class="l">"Tapi... Bagaimana jika aku melupakan mereka secara sengaja?" Tanya laki-laki itu, tangannya mencoba menarik, mempererat jarak di antara ia dan dirinya sendiri.</p>
+
+            <p class="r">"Tidak apa... Karena kita sudah disini, mencoba mengingat semua kembali, walau hanya sekedar fragmentasi."</p>
+
+            <p>Senyap. Hanya ada suara gemuruh hujan dan kadang ledakan petir yang mengisi kekosongan di antara mereka. Walau hanya emulasi, tak ingin laki-laki itu melepaskan kesunyian ini, takut akan apa yang akan ia hadapi, akan apa yang akan ia temukan di komputer itu.</p>
+
+            <p class="r">"Kita harus menelisik." Bisik cerminannya.</p>
+
+            <p class="l">"Tapi... Aku takut. Karena itulah aku menguburnya." Sahut laki-laki itu sendu.</p>
+
+            <p class="r">"Kita hadapi saja. Ada tidak ada, sakit sesaknya."</p>
+
+            <p class="r">"Karena aku adalah dirimu, maka apa yang kau rasakan juga aku rasakan."</p>
+            
+            <p class="r">"Jadi, aku akan menemanimu." Cerminannya mencoba meyakinkan diri mereka.</p>
+
+            <p>Pelan dan ragu, laki-laki itu mendorong dirinya sendiri menjauh. Matanya terpejam untuk sesaat, dan ketika ia membukanya, pupil matanya telah membidik kembali ke layar komputer itu.</p>
+
+            <p class="r">"Kita lihat satu persatu." Ujar cerminannya lembut.</p>
+
+            <p>Laki-laki itu hanya mengangguk sebagai jawabannya. Laki-laki itu memutar dirinya, menghadap komputer itu. Dadanya bergerak saat ia menarik nafas sesaat.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one three dash A." Ucapannya pelan. Komputer itu mendengarkannya, karena tampilannya berubah.</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "xx-xx-2011-a"/<span class="tran">/mencari "xx-xx-2011-a"</span>
+            </p>
+            <p>found one memory, displaying/<span class="tran">/ditemukan satu memori, menampilkan</span>
+            </p>
+            <p>memory/<span class="tran">/memori</span>:
+            </p>
+            <p>senja <span class="miss">[MISSING DATA]</span> seorang bocah <span class="miss">[MISSING DATA]</span> seorang laki-laki tua <span class="miss">[MISSING DATA]</span> bisikan doa <span class="miss">[MISSING DATA]</span> tangisan <span class="miss">[END OF MEMORY]</span></p>
+            <p>
+                <span class="tran"></span>
+            </p>
+            <p>fragmentation detected, reconstruct?/<span class="tran">/fragmentasi terdeteksi, rekonstruksi?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="l">"Aku... Kita melupakannya?"</p>
+
+            <p>Ia membeku, matanya terpaku, menatap layar itu dalam diam. Bola matanya terus berputar, menelisik, menelusuri tulisan-tulisan itu dari awal paragraf ke akhir, berulang kali. Samar memori itu, terkubur di balik fragmentasi.</p>
+
+            <p class="r">"Tidak... Kita tidak melupakannya."</p>
+
+            <p class="r">"Itu semua terjadi sebelum kita memahaminya."</p>
+
+            <p>Laki-laki itu kembali berbalik membawa tatapannya ke komputer itu. Mulutnya mulai terbuka, ingin mengucapkan sebuah perintah.</p>
+
+            <p class="l">"Query: recons..."</p>
+
+            <p class="r">"Jangan." Cegat cerminannya, menutup mulutnya.</p>
+
+            <p>Laki-laki itu diam sesaat, menatap mata cerminannya. Namun, cerminannya menghindarinya.</p>
+
+            <p class="r">"Aku... Kita takut."</p>
+
+            <p class="l">"Kenapa kita harus takut?"</p>
+
+            <p class="r">"Aku... Kita takut bahwa... Apapun itu yang di rekonstruksi, akan mengatakan sesuatu tentang diri kita."</p>
+
+            <p>Mata laki-laki itu layu, turun menatap ke titik kosong yang tidak jelas di mana, karena ia juga ingin menghindar tatapan cerminannya.</p>
+
+            <p class="l">"Kalau begitu... Kita telisik saja dulu untuk saat ini." Jawab laki-laki itu, kembali menatap mata cerminannya.</p>
+
+            <p class="r">Ragu, takut, malu, cerminannya memutar bola matanya kembali menatapnya, di ikuti dengan anggukan kecil.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one three dash C."</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "xx-xx-2011-c"/<span class="tran">/mencari "xx-xx-2011-c"</span>
+            </p>
+            <p>found one memory, displaying/<span class="tran">/ditemukan satu memori, menampilkan </span>
+            </p>
+            <p>memory/<span class="tran">/memori </span>
+            </p>
+            <p>
+                di siang dengan langit yang mendung <span class="miss">[MISSING DATA]</span> keranda <span class="miss">[MISSING DATA]</span> tangisan <span class="miss">[END OF MEMORY]</span>
+            </p>
+            <p>fragmentation detected, reconstruct?/<span class="tran">/fragmentasi terdeteksi, rekonstruksi?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="r">"Apa kau pikir pikiran kita memang tidak mau mengingatnya?" Tanya cerminannya tanpa menatapnya, melainkan menatap ke layar komputer itu.</p>
+
+            <p>Laki-laki itu menarik nafas sejenak, matanya juga tidak beralih, fokus. Matanya berputar dari kiri ke kanan, pikirannya dia mencoba mengisi apa yang ada di antara <span class="miss">[MISSING DATA]</span>.</p>
+
+            <p class="l">"Mungkin seperti yang kau bilang. Itu karena semua itu terjadi sebelum kita bisa memahaminya." Jawabnya, mencoba meyakinkan diri mereka</p>
+
+            <p>Laki-laki itu kembali berfokus, mulutnya terbuka, mengucapkan kueri berikutnya.</p>
+
+
+            <p class="l">"Query: X X dash X X dash two zero one six dash A."</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "xx-xx-2015-a"/<span class="tran">/mencari "xx-xx-2015-a"</span>
+            </p>
+            <p>found one memory, displaying/<span class="tran">/ditemukan satu memori, menampilkan</span>
+            </p>
+            <p>memory/<span class="tran">/memori</span>:
+            </p>
+            <p>di dapur yang gelap, seorang bocah laki-laki berdiri sendiri. tangannya bersandar di meja, matanya menatap kebawah, ditemani oleh aroma sintetis yang menggoda. tidak ada yang mau memasak untuknya, tidak ada yang bisa memasak untuknya, jadi hanya ini saja yang bisa ia masak untuk dirinya dan adiknya <span class="miss">[END OF MEMORY]</span></p>
+        </div>
+
+        <div class="just">
+            <p>Tanpa saling memandang, masih fokus ke komputer, mereka berbicara, sambil membaca apa yang di tampilkan di layar.</p>
+
+            <p class="r">"Itu bukan cerita, apalagi memori."</p>
+
+            <p class="l">"Aku tahu, tapi hanya inilah yang muncul di pikiran kita, sebuah justifikasi."</p>
+            
+            <p class="r">"Atas apa?"</p>
+
+            <p class="l">"Comfort food."</p>
+            
+            <p class="r">"Begitu sepele."</p>
+
+            <p class="l">"Mungkin sepele bagi orang lain."</p>
+
+            <p class="r">"Comfort food kita terikat dengan salah satu masa kelam dalam hidup kita?"</p>
+
+            <p class="l">"Aneh, bukan?"</p>
+
+            <p>Mereka diam sesaat, di temani oleh gemuruh hujan dan redup cahaya dari layar komputer itu. Laki-laki itu menatap cerminannya.</p>
+
+            <p class="l">"Kita masih mau menggali lebih dalam?" Tanyanya.</p>
+
+            <p class="r">"Ya..." Jawabnya cerminannya pelan, menatapnya lalu kembali menatap laki-laki itu.</p>
+
+            <p>Mereka kembali menatap monitor komputer itu, menghadapi apapun yang akan di katakan oleh benda itu tentang mereka.</p>
+            
+            <p class="l">"Query: X X dash X X dash two zero one six dash B."</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "xx-xx-2015-b"/<span class="tran">/mencari "xx-xx-2015-b"</span>
+            </p>
+            <p>found one memory, displaying/<span class="tran">/ditemukan satu memori, menampilkan </span>
+            </p>
+            <p>memory/<span class="tran">/memori</span>:
+            </p>
+            <p>ke ruang steril putih mata bocah laki-laki itu menatap, dari balik jendela yang tertutup rapat. seorang perempuan, terbaring lemah di sebuah kasur di dalam ruangan itu. matanya terpejam, tertutup. sebuah se<span class="miss">[MISSING DATA]</span>. matanya ingin beralih, bukan karena <span class="miss">[MISSING DATA]</span> atau <span class="miss">[MISSING DATA]</span>, apalagi karena <span class="miss">[MISSING DATA]</span>. namun karena <span class="miss">[MISSING DATA]</span> <span class="miss">[END OF MEMORY]</span></p>
+            <p>fragmentation detected, reconstruct?/<span class="tran">/fragmentasi terdeteksi, rekonstruksi?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="l">Laki-laki itu bersandar pada tangannya di meja, menatap layar komputer itu, membaca dan membaca tulisan itu lagi. Laki-laki itu menggaruk kepalanya, menyadari sesuatu akan memorinya.</p>
+
+            <p class="r">"Yah... Mungkin itu karena kau selalu menulis dari sudut pandang orang ketiga akhir-akhir ini." Sahut cerminannya pelan.</p>
+
+            <p class="l">"Atau mungkin..." Laki-laki itu ingin mengucapkannya, namun ragu, atau mungkin tidak ingin mengucapkan apa yang sudah di ucapkan berulang kali.</p>
+
+            <p class="r">"Atau mungkin karena kita takut." Cerminannya menyambung, mengulang kalimat yang sudah muncul berulang kali.</p>
+
+            <p class="l">"Kita selalu takut." Tawa kecil laki-laki itu.</p>
+
+            <p>Laki-laki itu kembali menatap layar komputer itu, mulutnya terbuka mengucapkan kueri berikutnya.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one six dash C."</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "xx-xx-2015-c"/<span class="tran">/mencari "xx-xx-2015-c"</span>
+            </p>
+            <p>found one memory, displaying/<span class="tran">/ditemukan satu memori, menampilkan </span>
+            </p>
+            <p>memory/<span class="tran">/memori</span>:
+            </p>
+            <p><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[END OF MEMORY]</span></span>
+            </p>
+            <p>fragmentation detected, reconstruct?/<span class="tran">/fragmentasi terdeteksi, rekonstruksi?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="r">"Apa yang terjadi?"</p>
+            <p class="l">"Aku juga tidak tahu."</p>
+            <p class="l">"Query: X X dash X X dash two zero one six dash D."</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "xx-xx-2015-d"/<span class="tran">/mencari "xx-xx-2015-d"</span>
+            </p>
+            <p>found one memory, displaying/<span class="tran">/ditemukan satu memori, menampilkan </span>
+            </p>
+            <p>memory/<span class="tran">/memori</span>:
+            </p>
+            <p><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[END OF MEMORY]</span></span>
+            </p>
+            <p>fragmentation detected, reconstruct?/<span class="tran">/fragmentasi terdeteksi, rekonstruksi?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p>Mereka berdua terdiam untuk sesaat, menatap layar komputer itu. Bisik tarikan dan hembusan nafas mereka bisa terdengar diantara derasnya hujan yang sedang menerpa di luar sana.</p>
+
+            <p class="r">"Apakah kita benar-benar sudah lupa?" Tanya cerminannya pelan.</p>
+
+            <p class="l">"Masih... Masih ada satu memori lagi." Jawab laki-laki itu ragu, terbesit sedikit harapan dalam dirinya.</p>
+            
+            <p class="l">"Query: X X dash X X dash two zero one six dash D."</p>
+        </div>
+
+        <div class="com">
+            <p>searching for "xx-xx-2015-e"/<span class="tran">/mencari "xx-xx-2015-e"</span>
+            </p>
+            <p>found one memory, displaying/<span class="tran">/ditemukan satu memori, menampilkan </span>
+            </p>
+            <p>memory/<span class="tran">/memori</span>:
+            </p>
+            <p><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[END OF MEMORY]</span></span>
+            </p>
+            <p>multiple fragmentations detected, mass reconstruct?/<span class="tran">/fragmentasi ganda terdeteksi, rekonstruksi masal?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="r">"Aku tidak ingin mengganggumu dengan dialog internal yang tak perlu." Ujar cerminannya, sudah bisa membaca apa yang akan dilakukan laki-laki itu.</p>
+            
+            <p>Laki-laki itu ingin mengucapkan sesuatu, bibirnya sudah setengah terbuka, namun ragu. Akhirnya ia menarik nafas, dan berucap.</p>
+            
+            <p class="l">"Kau... Kau boleh meninggalkanku." Jawabnya.</p>
+            
+            <p class="r">"Aku tidak akan meninggalkanmu. Aku akan ikut menyaksikan, sebagai dirimu."</p>
+            
+            <p>Laki-laki itu hanya mengangguk, lalu kembali mengalihkan perhatiannya. Debar, detak jantungnya. Bibinya kembali terbuka, mengucapkannya.</p>
+
+            <p class="l">"Query: reconstruct."</p>
+        </div>
+
+        <div class="com">
+            <p>special query accepted, reconstructing/<span class="tran">/kueri khusus diterima, merekonstruksi</span>
+            </p>
+            <p>searching through/<span class="tran">/mencari melalui</span>:
+            </p>
+                "masa duka"
+                <br>"fragmentasi"
+                <br>xx-xx-2011-a
+                <br>xx-xx-2011-c
+                <br>xx-xx-2015-a
+                <br>xx-xx-2015-b
+                <br>xx-xx-2015-c
+                <br>xx-xx-2015-d
+                <br>xx-xx-2015-e
+            <br>
+            <p>accessing random memory as starting point/<span class="tran">/mengakses memori acak sebagai titik permulaan</span>
+            </p>
+            <p><span class="tran" id="kueri">fragmentasi</span>
+            </p>
+            <p>rebuilding memories/<span class="tran">/membangun ulang memori</span>
+            </p>
+            <p>WARNING: MEMORY LEAK DETECTED/<span class="tran">/PERINGATAN: TERDETEKSI KEBOCORAN MEMORI</span>
+            </p>
+            <br>
+            <br>
+            <button class="tb" id="reset"><b>PRESS THIS TO RESET//TEKAN INI UNTUK RESET>>></b></button>
+            
+        </div>
+
+        <!--div class="com">
+            <p><span class="tran"></span>
+            </p>
+            <span class="miss">[MISSING DATA]</span>
+            <span class="miss">[END OF MEMORY]</span>
+        </div-->
+    </div>
+
+    <div id="tab2" style="display: none;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="just">
+            <p>Gelap.</p>
+
+            <p>Tidak ada apa-apa selain layar komputer itu. Tidak ada suara apa-apa, seakan hujan di luar tiba-tiba mengering, tak bersisa.</p>
+        </div>
+
+        <div class="com">
+            <p>special query accepted, reconstructing/<span class="tran">/kueri khusus diterima, merekonstruksi</span>
+            </p>
+            <p>searching through/<span class="tran">/mencari melalui</span>:
+            </p>
+                "masa duka"
+                <br>"fragmentasi"
+                <br>xx-xx-2011-a
+                <br>xx-xx-2011-c
+                <br>xx-xx-2015-a
+                <br>xx-xx-2015-b
+                <br>xx-xx-2015-c
+                <br>xx-xx-2015-d
+                <br>xx-xx-2015-e
+            <br>
+            <p>accessing random memory as starting point/<span class="tran">/mengakses memori acak sebagai titik permulaan</span>
+            </p>
+            <p><span class="tran">fragmentasi/masa duka/rumah sakit/mie/ibu/kematian/ayah/hidup/kesendirian</span>
+            </p>
+            <p>rebuilding memories/<span class="tran">/membangun ulang memori</span>
+            </p>
+            <p>WARNING: MEMORY LEAK DETECTED/<span class="tran">/PERINGATAN: TERDETEKSI KEBOCORAN MEMORI</span>
+            </p>
+            <br>
+            <br>
+            <button class="tb"><b>PRESS THIS TO RESET//TEKAN INI UNTUK RESET</b></button>
+        </div>
+
+        <div class="just">
+            <p>Terlihat sebuah bayangan melintas, terdengar suara langkah, diakhiri oleh sebuah hentakkan. Laki-laki itu berdiri dari tempatnya, berjalan keluar kamarnya.</p>
+
+            <p>Gelap namun tidak tanpa cahaya. Ibarat gelap senja yang dimakan awan mendung.</p>
+
+            <p>Klik. Klik. Klik. Suara klik terdengar entah dari mana. Suara klik berulang, seperti sebuah pemutar kaset yang berjalan dengan kencang. Lalu muncullah pancaran pendar cahaya.</p>
+
+            <p class="l">"Hei kau..."</p>
+
+            <p>Tak dibalas panggilannya, melainkan dengan suara hentakkan lagi. Laki-laki itu terdiam sesaat, hanya sekedar mengamati. Pendar cahaya itu datang dari seorang bocah laki-laki. Ia berdiri di depan meja makan, dengan dua mangkuk di mejanya.</p>
+
+            <p>Suara hentakkan berulang lagi, saat pendar hologram itu mengulang sebuah gerakan, meletakkan dua mangkuk itu di meja makan.</p>
+
+            <p class="m">"Ka-"</p>
+            <p class="m">"Kaka-"</p>
+            <p class="m">"Ka-"</p>
+
+            <p>Muncul pendar hologram lain, ibarat pita kaset yang telah kusut, hologram itu membeku, gerakannya patah-patah, suaranya berulang-ulang.</p>
+
+            <p>Klik berulang suara pita kaset sedang di tarik, dan dengan munculnya suara itu, lenyaplah dua sosok holografik itu.</p>
+
+            <p>Suara tangisan. Terdengar samar-samar, bahkan di antara keheningan ini. Pendar cahaya terpencar dari sebuah pintu. Selangkah, dua langkah, laki-laki itu membawa kedua kakinya. Debar berdebar detak jantungnya, singkat dan cepat tarik nafasnya.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>Laki-laki itu terdiam lagi, hanya mengamati jauh dari luar bingkai pintu kamar. Di dalamnya ada seorang laki-laki tua, terbaring lemah, mata terbuka lebar. Di sampingnya ada seorang bocah laki-laki yang familiar, berbisik ke telinganya.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>Terus berulang adegan itu, ibarat di putar dari pita kaset yang telah rusak atau terdegradasi. Gerak hologram itu patah-patah, kadang membeku. Suara yang mengikuti juga patah-patah, tak pernah selesai.</p>
+
+            <p>Klik, klik, klik. Terdengar lagi suara pita kaset sedang di tarik.</p>
+
+            <p>Suara tangisan, samar, patah-patah, terdengar dari suatu tempat di rumah ini. Di ikuti oleh gemuruh suara riuh sekumpulan masa, membaca sebuah surah, namun suaranya juga patah-patah. Volumenya tak berimbang.</p>
+
+            <p>Laki-laki itu melangkah pelan keluar. Pendar cahaya hologram menerangi ruang tamu. Orang-orang duduk berjejer di sisi ruangan, dengan tangan yang memegang sebuah buku kecil. Mulut mereka bergerak, membaca isi buku itu dengan khidmat, walau tak ada suaranya.</p>
+
+            <p>Di ujung ruangan, ada dua orang bocah laki-laki duduk menghadap seorang jenazah.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>Suara mereka terputus-putus, berulang-ulang, saat dua bocah itu membaca dari sebuah kitab. Di antara suara yang terputus-putus itu, ia bisa mendengar desakan nafas, suara yang pecah dan sendu. Di pipi dua laki-laki itu, garis air mata, tak bergerak, tak jatuh menetes, hanya ikut berulang. Di hadapan mereka adalah seorang jenazah perempuan yang telah di bungkus kain kafan putih.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>Laki-laki itu terdiam dalam langkahnya. Tak ingin ia melangkah maju, melihat lebih dekat. Takut ia melangkah maju, melihat apa yang tersisa dari mereka. Kedua kakinya terus membawanya mundur. Semakin jauh, semakin jauh ke dalam kegelapan. Semua adegan itu menjadi semakin jauh, seakan berada di dimensi yang berbeda.</p>
+
+            <p>Adegan holografik itu kembali lagi.</p>
+
+            <p>Suara tangisan. Terdengar samar-samar, bahkan di antara keheningan ini. Pendar cahaya terpencar dari sebuah pintu. Selangkah, dua langkah, laki-laki itu membawa kedua kakinya. Debar berdebar detak jantungnya, singkat dan cepat tarik nafasnya.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>Laki-laki itu terdiam lagi, hanya mengamati jauh dari luar bingkai pintu kamar. Di dalamnya ada seorang laki-laki tua, terbaring lemah, mata terbuka lebar. Di sampingnya ada seorang bocah laki-laki yang familiar, berbisik ke telinganya.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>Terus berulang adegan itu, ibarat di putar dari pita kaset yang telah rusak atau terdegradasi. Gerak hologram itu patah-patah, kadang membeku. Suara yang mengikuti juga patah-patah, tak pernah selesai.</p>
+
+            <p>Adegan holografik itu kembali berulang.</p>
+
+            <p>Orang-orang duduk berjejer di sisi ruangan, dengan tangan yang memegang sebuah buku kecil. Mulut mereka bergerak, membaca isi buku itu dengan khidmat, walau tak ada suaranya.</p>
+
+            <p>Di ujung ruangan, ada dua orang bocah laki-laki duduk menghadap seorang jenazah.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>Suara mereka terputus-putus, berulang-ulang, saat dua bocah itu membaca dari sebuah kitab. Di antara suara yang terputus-putus itu, ia bisa mendengar desakan nafas, suara yang pecah dan sendu. Di pipi dua laki-laki itu, garis air mata, tak bergerak, tak jatuh menetes, hanya ikut berulang. Di hadapan mereka adalah seorang jenazah perempuan yang telah di bungkus kain kafan putih.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>Laki-laki itu terus melangkah mundur, bukan tanpa acuh, namun membawa harapan. Harapan kecil, semoga ia bisa menemukan memori lain tentang mereka, apapun itu.</p>
+
+            <div class="red-gradient">
+                <div class="two-columns-grid">
+                    <div>
+                        <p>Adegan holografik itu kembali lagi.</p>
+    
+                        <p>Suara tangisan. Terdengar samar-samar, bahkan di antara keheningan ini. Pendar cahaya terpencar dari sebuah pintu. Selangkah, dua langkah, laki-laki itu membawa kedua kakinya. Debar berdebar detak jantungnya, singkat dan cepat tarik nafasnya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Laki-laki itu terdiam lagi, hanya mengamati jauh dari luar bingkai pintu kamar. Di dalamnya ada seorang laki-laki tua, terbaring lemah, mata terbuka lebar. Di sampingnya ada seorang bocah laki-laki yang familiar, berbisik ke telinganya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Terus berulang adegan itu, ibarat di putar dari pita kaset yang telah rusak atau terdegradasi. Gerak hologram itu patah-patah, kadang membeku. Suara yang mengikuti juga patah-patah, tak pernah selesai.</p>
+                    </div>
+                    <div>
+                        <p>Adegan holografik itu kembali berulang.</p>
+    
+                        <p>Orang-orang duduk berjejer di sisi ruangan, dengan tangan yang memegang sebuah buku kecil. Mulut mereka bergerak, membaca isi buku itu dengan khidmat, walau tak ada suaranya.</p>
+            
+                        <p>Di ujung ruangan, ada dua orang bocah laki-laki duduk menghadap seorang jenazah.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+            
+                        <p>Suara mereka terputus-putus, berulang-ulang, saat dua bocah itu membaca dari sebuah kitab. Di antara suara yang terputus-putus itu, ia bisa mendengar desakan nafas, suara yang pecah dan sendu. Di pipi dua laki-laki itu, garis air mata, tak bergerak, tak jatuh menetes, hanya ikut berulang. Di hadapan mereka adalah seorang jenazah perempuan yang telah di bungkus kain kafan putih.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="two-columns-grid">
+                    <div>
+                        <p>Adegan holografik itu kembali lagi.</p>
+    
+                        <p>Suara tangisan. Terdengar samar-samar, bahkan di antara keheningan ini. Pendar cahaya terpencar dari sebuah pintu. Selangkah, dua langkah, laki-laki itu membawa kedua kakinya. Debar berdebar detak jantungnya, singkat dan cepat tarik nafasnya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Laki-laki itu terdiam lagi, hanya mengamati jauh dari luar bingkai pintu kamar. Di dalamnya ada seorang laki-laki tua, terbaring lemah, mata terbuka lebar. Di sampingnya ada seorang bocah laki-laki yang familiar, berbisik ke telinganya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Terus berulang adegan itu, ibarat di putar dari pita kaset yang telah rusak atau terdegradasi. Gerak hologram itu patah-patah, kadang membeku. Suara yang mengikuti juga patah-patah, tak pernah selesai.</p>
+                    </div>
+                    <div>
+                        <p>Adegan holografik itu kembali berulang.</p>
+    
+                        <p>Orang-orang duduk berjejer di sisi ruangan, dengan tangan yang memegang sebuah buku kecil. Mulut mereka bergerak, membaca isi buku itu dengan khidmat, walau tak ada suaranya.</p>
+            
+                        <p>Di ujung ruangan, ada dua orang bocah laki-laki duduk menghadap seorang jenazah.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+            
+                        <p>Suara mereka terputus-putus, berulang-ulang, saat dua bocah itu membaca dari sebuah kitab. Di antara suara yang terputus-putus itu, ia bisa mendengar desakan nafas, suara yang pecah dan sendu. Di pipi dua laki-laki itu, garis air mata, tak bergerak, tak jatuh menetes, hanya ikut berulang. Di hadapan mereka adalah seorang jenazah perempuan yang telah di bungkus kain kafan putih.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="two-columns-grid">
+                    <div>
+                        <p>Adegan holografik itu kembali lagi.</p>
+    
+                        <p>Suara tangisan. Terdengar samar-samar, bahkan di antara keheningan ini. Pendar cahaya terpencar dari sebuah pintu. Selangkah, dua langkah, laki-laki itu membawa kedua kakinya. Debar berdebar detak jantungnya, singkat dan cepat tarik nafasnya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Laki-laki itu terdiam lagi, hanya mengamati jauh dari luar bingkai pintu kamar. Di dalamnya ada seorang laki-laki tua, terbaring lemah, mata terbuka lebar. Di sampingnya ada seorang bocah laki-laki yang familiar, berbisik ke telinganya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Terus berulang adegan itu, ibarat di putar dari pita kaset yang telah rusak atau terdegradasi. Gerak hologram itu patah-patah, kadang membeku. Suara yang mengikuti juga patah-patah, tak pernah selesai.</p>
+                    </div>
+                    <div>
+                        <p>Adegan holografik itu kembali berulang.</p>
+    
+                        <p>Orang-orang duduk berjejer di sisi ruangan, dengan tangan yang memegang sebuah buku kecil. Mulut mereka bergerak, membaca isi buku itu dengan khidmat, walau tak ada suaranya.</p>
+            
+                        <p>Di ujung ruangan, ada dua orang bocah laki-laki duduk menghadap seorang jenazah.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+            
+                        <p>Suara mereka terputus-putus, berulang-ulang, saat dua bocah itu membaca dari sebuah kitab. Di antara suara yang terputus-putus itu, ia bisa mendengar desakan nafas, suara yang pecah dan sendu. Di pipi dua laki-laki itu, garis air mata, tak bergerak, tak jatuh menetes, hanya ikut berulang. Di hadapan mereka adalah seorang jenazah perempuan yang telah di bungkus kain kafan putih.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="two-columns-grid">
+                    <div>
+                        <p>Adegan holografik itu kembali lagi.</p>
+    
+                        <p>Suara tangisan. Terdengar samar-samar, bahkan di antara keheningan ini. Pendar cahaya terpencar dari sebuah pintu. Selangkah, dua langkah, laki-laki itu membawa kedua kakinya. Debar berdebar detak jantungnya, singkat dan cepat tarik nafasnya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Laki-laki itu terdiam lagi, hanya mengamati jauh dari luar bingkai pintu kamar. Di dalamnya ada seorang laki-laki tua, terbaring lemah, mata terbuka lebar. Di sampingnya ada seorang bocah laki-laki yang familiar, berbisik ke telinganya.</p>
+            
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+            
+                        <p>Terus berulang adegan itu, ibarat di putar dari pita kaset yang telah rusak atau terdegradasi. Gerak hologram itu patah-patah, kadang membeku. Suara yang mengikuti juga patah-patah, tak pernah selesai.</p>
+                    </div>
+                    <div>
+                        <p>Adegan holografik itu kembali berulang.</p>
+    
+                        <p>Orang-orang duduk berjejer di sisi ruangan, dengan tangan yang memegang sebuah buku kecil. Mulut mereka bergerak, membaca isi buku itu dengan khidmat, walau tak ada suaranya.</p>
+            
+                        <p>Di ujung ruangan, ada dua orang bocah laki-laki duduk menghadap seorang jenazah.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+            
+                        <p>Suara mereka terputus-putus, berulang-ulang, saat dua bocah itu membaca dari sebuah kitab. Di antara suara yang terputus-putus itu, ia bisa mendengar desakan nafas, suara yang pecah dan sendu. Di pipi dua laki-laki itu, garis air mata, tak bergerak, tak jatuh menetes, hanya ikut berulang. Di hadapan mereka adalah seorang jenazah perempuan yang telah di bungkus kain kafan putih.</p>
+            
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="just">
+                    <p>Laki-laki itu terus melangkah mundur, harapannya lenyap, di telan memori yang berat. Semuanya merah, semuanya habis tak bersisa. Hanya ada dua itu saja. Tak ada memori bahagia, tak ada memori buruk, tak ada kenetralan, tak ada hidup, hanya ada dua memori merah tentang kematian. Terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus berulang, terus-</p>
+                </div>
+            </div>
+
+            <div class="just">
+                <p class="r">"Cukup."</p>
+
+                <p class="r">"Jangan menyalahkan diri kita."</p>
+                
+                <p class="r">"Semua itu terjadi saat kita masih begitu muda, begitu naif dan kekanak-kanakan."</p>
+                
+                <p class="r">"Mau seberapa jauh pun kita melangkah mundur, memang tidak banyak yang kita ingat dari masa itu, dan sebelumnya."</p>
+                
+                <p class="r">"Jadi, sudah cukup."</p>
+
+                <button class="tb" id="terang"><span style="font-size: 14pt;">Terang benderang>>></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab3" style="display: none; background-color: white; color: black; padding: 10px; margin: 10px;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Laki-laki itu sudah tak tahu dimana ia sekarang.</p>
+
+        <p>Ia tak lagi melangkah mundur. Kedua kakinya bergiliran, membawanya maju, berjalan melalui pendar cahaya putih yang menyilaukan mata. Di depan, ada sebuah tembok, dengan sebuah pintu tertutup.</p>
+
+        <p>Tangannya menjulur, memutar gagang pintu itu, lalu ia melangkah masuk. Sebuah wajah familiar telah menunggunya.</p>
+
+        <p class="r whit">"Kau kembali." Sapanya.</p>
+
+        <p class="r whit">"Aku melihat semuanya, bersamamu, sebagai dirimu."</p>
+
+        <p>Cerminannya duduk di depan sebuah meja. Laki-laki itu mencium sebuah aroma yang familiar dan menggugah selera. Mata laki-laki itu mencari sumber aroma itu, dan akhirnya pandangannya mendarat di sebuah mangkuk di depan cerminannya.</p>
+
+        <p class="r whit">"Untukmu." Cerminannya menawarkan, mendorong mangkuk itu di atas meja k arah laki-laki itu.</p>
+
+        <p>Laki-laki itu masih diam, seraya ia duduk di depan meja itu. Ia tarik mangkuk itu kehadapan dirinya. Jari-jarinya memegang garpu dan sendoknya, dan mulai menikmatinya. Kuah kuningnya yang asin dan gurih, mie panjang yang kenyal. Semangkuk ini tidak hanya sedap, namun juga familiar. Semangkuk mie ini tidak hanya pengisi lapar, namun juga memberinya ilusi akan kendali diantara ketidakpastian, bahwa semuanya akan baik-baik saja.</p>
+
+        <p class="r whit">"Setelah semua itu, kau masih di sini." Ujar cerminannya lembut.</p>
+
+        <p class="l whit">"Ya... Kita masih di sini." Laki-laki itu mengkoreksinya.</p>
+
+        <p>Garpu dan sendok berdenting bersama, saat laki-laki itu kembali menyantap mienya.</p>
+
+        <p class="r whit">"Setelah semua itu. Setelah terlintas jembatan dan tali gantung itu... Kita tidak melakukannya."</p>
+
+        <p class="l whit">"Itu semua... hanya terlintas." Jawab laki-laki itu sambil mengunyah makanannya.</p>
+
+        <p class="r whit">"Walau begitu. Kita masih di sini."</p>
+
+        <p>Keheningan melingkupi mereka, suara latar hanya di isi oleh dentingan garpu dan sendok yang saling berbenturan saat laki-laki itu terus menyantap nya.</p>
+        <p>Keheningan melingkupi mereka, suara latar hanya di isi oleh dentingan garpu dan sendok yang saling berbenturan saat laki-laki itu terus menyantap <i></i>nya.</p>
+
+        <p class="r whit">"Tak seorangpun pantas melalui apa yang kita lalui, di saat kita masih begitu muda."</p>
+
+        <p class="r whit">"Hidup tanpa panutan, tanpa pemandu, tanpa kepastian."</p>
+
+        <p class="r whit">"Bahkan sekarang, kita masih bingung, masih tak berarah."</p>
+
+        <p>Laki-laki itu terdiam sesaat. Belitan mie yang ada di garpunya batal masuk menuju mulutnya, saat perlahan ia meletakkan kedua alat makan itu kembali ke mangkuknya.</p>
+
+        <p class="r whit">"Iri dengan mereka yang disayang, dirawat, dan memiliki panutan."</p>
+
+        <p class="r whit">"Sudah bertahun-tahun kita tak mengucapkan <b>"ibu"</b> atau <b>"ayah"</b> tanpa ada rasa bersalah."</p>
+
+        <p class="r whit">"Dan ternyata, hanya begitu sedikit dari diri mereka berbekas pada kita..."</p>
+
+        <p class="r whit">"Karena... Panjang umur kita... Akan kita jalani tanpa mereka."</p>
+
+        <p class="l whit">"Walau begitu. Kita masih di sini."</p>
+
+        <p class="r whit">"Rusak, rapuh, serba berkekurangan, selalu rendah dan hina."</p>
+
+        <p class="l whit">"Ya. Tapi... Kita masih di sini."</p>
+
+        <p class="l whit">"Kita..."</p>
+
+        <p>Terasa dingin, terasa basah. Nafas laki-laki itu berat, setiap tarikannya pendek. Ia bawa kedua tangannya ke wajahnya, basah mengucur ke pipi dari matanya.</p>
+
+        <p class="l whit">"Kita... Aku masih...."</p>
+
+        <p>Ia sapukan telapak tangannya, ke pipi dan matanya. Namun tak berhenti itu mengalir. Sedangkan nafasnya semakin berat, semakin sulit baginya untuk berkata-kata.</p>
+
+        <p class="l whit">"Aku... Aku masih... Disini." Sendu suaranya.</p>
+
+        <p class="l whit">"Aku masih disini...."</p>
+
+        <p>Di antara kesunyian yang melingkupinya, hanya ada suara isak tangisan laki-laki itu. Sesak rasanya di tahan, jadi ia bersandar, memandang ke atas, tak peduli lagi siapa yang mendengarnya, atau siapa yang melihatnya. Air matanya mengucur bagai hujan yang tak berhenti. Suara tangisnya bagai bendungan yang meluap, sudah tak tertahankan lagi.</p>
+        <br>
+        <br>
+        <br>
+
+
+        <div style="margin: -10px; padding: 10px; background-color: black;">
+            <br>
+            <button class="tb" id="gelap"><span style="font-size: 14pt;">Gelap>>></span></button>
+            <br>
+        </div>
+
+    </div>
+
+    <div id="tab4" style="display: none;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="just">
+            <p>Tak ada apa-apa lagi di sini selain dirinya sendiri. Tak ada hal lain yang dapat di rasakan fisiknya, selain sesak nafasnya, dan lembab pipinya.</p>
+
+            <p>Cahaya menembus pupil matanya.</p>
+
+            <p>Ia telah kembali. Membawa sedikit sisa dari penelusuran memorinya. Masih berat nafasnya, masih sesenggukan. Ia menyapu pipi dan matanya, menyapu bekas air matanya. Perlahan, ia angkat tatap kedua matanya. Sepetak layar putih tadi sudah terisi.</p>
+
+            <div id="output"></div>
+
+            <p>Tangannya kembali menjangkau papan ketiknya. Jari jemarinya mulai menusuk-nusuk tombol yang ada di papan itu.</p>
+
+            <div style="background-color: white; color: black; padding: 10px; margin:25px;">
+                <p><b>Catatan penulis:</b></p>
+
+                <p>Ini merupakan cerita paling berat yang pernah ku tulis sejauh ini. Bukan hanya dari sisi teknis, namun juga utamanya dari sisi emosional. Aku tidak akan malu mengakui, bahwa dalam proses penulisan ini, yang berlangsung selama 12 jam dalam 11 hari (kurang lebih 1 jam perhari), aku sempat menangis dua kali, dan harus jeda total menulis selama dua hari.</p>
+
+                <p>Aku harap tidak satupun dari kalian ada yang mengerti. Karena untuk mengerti, kalian harus senasib.</p>
+
+                <p>Namun, jika kau mengerti. Tolong, jangan marahi aku. Beginilah apa adanya, memori yang ku pegang dari mereka.</p>
+
+                <p>Ku coba lagi, untuk ku tarik lebih jauh ke belakang. Tak hanya mencoba mengingat tentang mereka, namun juga mencoba mengingat masa kecilku.</p>
+
+                <p>Memang tidak ada yang bersisa.</p>
+
+                <p>Tak ada nama, tak ada wajah, tak ada suara.</p>
+
+                <p>Begitu juga dengan mereka. Suara mereka telah benar-benar memudar dari memoriku. Begitu pula dengan wajah mereka, kecuali jika aku di ingatkan dengan foto-foto dari album lama.</p>
+
+                <p>Tak ada pilihan lain, bagi diriku pribadi, selain merelakan tidak hanya kepergian mereka. Sekarang aku juga harus merelakan memori tentang mereka.</p>
+
+                <p>Karena, suka tidak suka, selain kaitan darah, tak banyak dari mereka yang membekas di diriku. Selain itu, mengasumsikan aku berumur panjang, maka mayoritas waktu hidupku akan ku jalani, tanpa mereka.</p>
+
+                <p>Mungkin aku jahat, mungkin aku durhaka, atau semoga ini hanya langkah pragmatisme belaka.</p>
+
+                <p>Hakimi aku, jika kau mau. Jangan di sini, jangan lewat chat. Namun, hakimi aku, langsung datangi aku, dan teriaki dan marahi aku, jika kau mau.</p>
+
+                <p>Namun, sebelum kau melakukan semua itu. Ku mohon, peluk aku dengan tulus. Ku mohon.</p>
+
+                <p>Beginilah apa adanya, aku dan memoriku akan mereka.</p>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="com">
+            <p>Dengan ini, ku nyatakan PERSONAL hiatus. Tak tahu berapa lama, namun aku akan berhenti menulis draft untuk PERSONAL. Jika ada salah satu dari kalian yang telah ku janjikan dedikasi sebuah cerita, aku minta maaf, aku mungkin tidak bisa dan tidak mau memenuhinya dalam waktu dekat. Namun, PERSONAL hanya akan sekedar hiatus, hanya sebuah jeda. PERSONAL akan selalu hidup, selama aku hidup.</p>
+        </div>
+        <br><br><br><br><br>
+        <button class="tb" id="reset-page" onclick="location.reload();"><b>PRESS THIS TO RESET//TEKAN INI UNTUK RESET>>></b></button>
+
+    </div>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/gh/Hakase-Hamdani/fauxnet-scripts@2025c36e0d3fa8e74ba00e95bda67ddcf6347853/fauxnet_scripts.js"></script>
+    <script>
+        /*THIS IS FOR CYCLING TEXT WITHOUT "GLITCH" EFFECT*/
+        function changeText(targetId, changeInterval, textArray) {
+            let index = 0;
+            const element = document.getElementById(targetId);
+        
+            if (!element) {
+                console.error(`Element with ID '${targetId}' not found.`);
+                return;
+            }
+        
+            // Immediately set the first text
+            element.textContent = textArray[index];
+        
+            // Set interval for cycling text
+            setInterval(() => {
+                index = (index + 1) % textArray.length; // Cycle back to 0 after reaching the end
+                element.textContent = textArray[index];
+            }, changeInterval);
+        }
+        /*THIS IS FOR CYCLING TEXT WITHOUT "GLITCH" EFFECT*/
+        /*-----------------------------*/
+        /*THIS IS TO HIDE/UNHIDE ELEMENT IN ONE CLICK BUTTON*/
+        function hideUnhide(buttonId, hideThisId, unhideThisId, jumpToId) {
+            const button = document.getElementById(buttonId);
+            const hideElement = document.getElementById(hideThisId);
+            const unhideElement = document.getElementById(unhideThisId);
+            const jumpTarget = document.getElementById(jumpToId);
+
+            if (!button || !hideElement || !unhideElement || !jumpTarget) {
+                console.error(`One or mmyButtonore elements not found: '${buttonId}', '${hideThisId}', '${unhideThisId}', '${jumpToId}'`);
+                return;
+            }
+        
+            button.addEventListener('click', () => {
+                hideElement.style.display = 'none';
+                unhideElement.style.display = '';
+            
+                // Scroll to the newly shown element
+                jumpTarget.scrollIntoView({
+                    behavior: 'auto', // Smooth scroll animation
+                    block: 'start'      // Align to top of viewport
+                });
+            });
+        }
+        /*THIS IS TO HIDE/UNHIDE ELEMENT IN ONE CLICK BUTTON*/
+        /*------------------------------*/
+        /*this one kinda crazy. THIS TAKES CONTENTS OF <body> AS INPUT, THEN OUTPUT IT INTO A SELECTED ELEMENT*/
+        window.addEventListener('DOMContentLoaded', () => {
+            const bodyContent = document.body.innerHTML;
+            const outputElement = document.getElementById('output');
+
+            outputElement.textContent = bodyContent;
+        });
+        
+
+        /*this one kinda crazy. THIS TAKES CONTENTS OF <body> AS INPUT, THEN OUTPUT IT INTO A SELECTED ELEMENT*/
+
+        cycleText('ttl', ["AKSES MEMORI ACAK", "RANDOM ACCESS MEMORIES"]);
+        startBlip('blip-cursor', 500);
+        startBlip('blip-com', 500);
+        changeText('kueri', 250, ["fragmentasi", "masa duka", "rumah sakit", "mie", "ibu","kematian","ayah","hidup","kesendirian"]);
+        hideUnhide('tutorial', 'tutorial-div', 'tab1', 'tab1');
+        hideUnhide('reset', 'tab1', 'tab2', 'tab2');
+        hideUnhide('terang', 'tab2', 'tab3', 'tab3');
+        hideUnhide('gelap', 'tab3', 'tab4', 'tab4');
+        startFlicker('tutorial', 500)
+        startFlicker('reset', 250)
+        startFlicker('terang', 500)
+        startFlicker('gelap', 500)
+        startFlicker('reset-page', 1000)
+
+
+    </script>
+
+  </body>
+</html>
