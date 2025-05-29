@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LP Calculator</title>
+</head>
+<body>
+  <h1>Normalized LP Calculator</h1>
+  <p>Enter the values below:</p>
+
+  <label for="a">Jumlah PDKT (A):</label>
+  <input type="number" id="a" value="1"><br><br>
+
+  <label for="f">Jumlah teman perempuan (F):</label>
+  <input type="number" id="f" value="5"><br><br>
+
+  <label for="p">Rata-rata pasangan per demografi (P<sub>avg</sub>):</label>
+  <input type="number" id="p" value="6"><br><br>
+
+  <button onclick="calculateLP()">Hitung LP</button>
+
+  <h2 id="result"></h2>
+
+  <script>
+    function calculateLP() {
+      const A_user = parseInt(document.getElementById("a").value);
+      const F_user = parseInt(document.getElementById("f").value);
+      const P_avg = parseFloat(document.getElementById("p").value);
+
+      if (F_user === 0) {
+        document.getElementById("result").textContent = "F_user tidak boleh 0.";
+        return;
+      }
+
+      let L_values = [];
+      for (let F = 1; F <= F_user; F++) {
+        for (let A = 1; A <= F; A++) {
+          let L = (A / F) * P_avg;
+          L_values.push(L);
+        }
+      }
+
+      if (L_values.length === 0) {
+        document.getElementById("result").textContent = "Tidak ada kombinasi valid.";
+        return;
+      }
+
+      let L_min = Math.min(...L_values);
+      let L_max = Math.max(...L_values);
+      let L_user = (A_user / F_user) * P_avg;
+
+      let LP;
+      if (L_max - L_min === 0) {
+        LP = 0.0;
+      } else {
+        LP = ((L_user - L_min) / (L_max - L_min)) * 100;
+      }
+
+      document.getElementById("result").textContent =
+        `LP untuk A=${A_user}; F=${F_user} adalah: ${LP.toFixed(2)}%`;
+    }
+  </script>
+</body>
+</html>
