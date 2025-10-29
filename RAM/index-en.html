@@ -1,0 +1,1284 @@
+<!--RANDOM ACCESS MEMORIES © 2025 by Pengkhayal Pasif (Passive Daydreamer) is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: black;
+        }
+        .just {
+            text-align: justify;
+            color: white;
+        }
+
+        .r {
+            text-align: right;
+            color:white;
+        }
+
+        .l {
+            text-align: left;
+            color: white;
+        }
+
+        .m {
+            text-align: center;
+            color: white;
+        }
+
+        .whit {
+            color: black;
+        }
+
+        .com {
+            text-align: left;
+            color: salmon;
+            border: 1px salmon solid;
+            min-height: 300px;
+            padding:20px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .tran {
+            color: black;
+            background-color: red;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .miss {
+            color: red;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .tb {
+            background-color: salmon;
+            border: 1px solid salmon;
+            outline: none;
+            padding: 5px;
+            margin: 10px;
+            transition: 0.3s;
+            color: black;
+            cursor: pointer;
+        }
+
+        .red-gradient {
+            background: linear-gradient(to bottom, white, red); /* Define color gradient */
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; /* Make text transparent so gradient shows */
+        }
+
+        .two-columns-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+        }
+
+        .two-columns-grid > div {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #output {
+            height: 200px;
+            overflow: auto;
+            white-space: pre;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: 25px;
+            border: 1px solid white;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+
+    
+        .hidden {
+            visibility:hidden;
+            display:none; }
+    </style>
+</head>
+
+<body>
+    <span><!--more--></span>
+    <div id="tutorial-div" style="color: salmon; border: 1px salmon solid; margin: 10px; padding: 20px; text-align: justify;">
+        <h2 id="ttl">RANDOM ACCESS MEMORIES</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>LICENSE</h3>
+        <div>
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a style="color: white;" property="dct:title" rel="cc:attributionURL" href="https://fauxnet.blogspot.com/2025/10/ram-random-access-memories.html">RANDOM ACCESS MEMORIES</a> by <a style="color: white;" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fauxnet.blogspot.com/p/tentang-ku.html">Passive Daydreamer (Pengkhayal Pasif)</a> is licensed under 
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block; color: white;">
+                    CC BY-NC-SA 4.0
+                <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+                
+                </a>
+            </p> 
+        </div>
+        <p style="border: 1px solid salmon; text-align: center;">Part of <a style="color: white;"
+            href="https://fauxnet.blogspot.com/p/personal-hub.html">PERSONAL</a></p><span></span>
+        <br>
+        
+        <h3>PUBLISHING DATE</h3>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <th>ORIGINAL</th>
+                    <th>TRANSLATED</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a style="color: white;" href="https://fauxnet.blogspot.com/2025/04/akses-memori-acak.html">2518</a>
+                    </td>
+
+                    <td>
+                        <a style="color: white;" href="https://fauxnet.blogspot.com/2025/10/ram-random-access-memories.html">2544</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        
+        <div>
+            <h3>DISCLOSURE</h3>
+            <p>I would like to apologize beforehand, for the broken grammar, punctuation, and/or spelling, if there is any. Part of this post was translated using Google Translate, but it wasn't copy-paste translation. The original story is already difficult to work with because it intentionally breaks the "Subjek-Predikat-Objek-Keterangan" grammar rule in my native tongue, Bahasa Indonesia. So, I need a "priming" before I can translate this myself.</p>
+
+            <p>I also want to further disclose. While this story and the original was entirely written by me, the codes for interactivity was not. The code in the original was written by an AI tool we all know as ChatGPT. I am bad at coding, but once I got the code, I simply just reused them here. Rest assured that, there is no AI-generated prose, as I know AI would not be able to replicate my mistakes and my specific style. Not in my third language, much less in my native tongue.</p>
+            <p>This version was submitted to <b>Nick Carlson Press</b> YouTube channel as part of "Part 3 of the 25k Subscriber Special." More information can be found <a style="color: white;" href="https://www.youtube.com/post/Ugkxu1qwseMTnCcoJVjyUhGeOGdEJvS_QWkR">here</a>.</p>
+        </div>
+        <br>
+
+        <h3>CAUTION</h3>
+        <p>This story/entry is <span class="tran">LENGTHY</span>, multi-part, and entirely self-contained. Readers are expected to allow sufficient time to read it without interruption or distraction.</p>
+        <br>
+
+        <h3>TUTORIAL</h3>
+        <p>If you see a blinking button with the following characters <b>>>></b> like the following...</p>
+        
+        <button class="tb" id="tutorial"><b>Click to continue the story>>></b></button>
+
+        <p>Once you clicked a button of similar function in this story, you will not be able to return, as retuning will just move you back one page instead of moving you back one "chapter."</p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="tab1" style="display: none;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="just">
+            <p>
+                The sound of rain outside was muffled, its droplets hitting the windowpane that separated his life from the uncaring and indifferent outside world. A faint purple and violet light pierce through the window, dim like a night light, yet moving and dancing, distracting like an advertisement.
+            </p>
+            <p>
+                There was another light illuminating his face. He sat in the corner of the room, his back hunched, his fingers frozen like statue, and his retinas burned by the bright light of the blank CRT screen.
+            </p>
+            <p>
+                He wants to type something, yet that something never show up in his mind. The only thing that accompany him is just a blank white screen that blinds his eyes, and a blinking black cursor, mocking the emptiness of his mind with each ticks.
+            </p>
+            
+            <div style="height: 200px; background-color: white; padding: 10px; margin:25px;">
+                <span id="blip-cursor" style="color: black;"><b>|</b></span>
+            </div>
+        </div>
+        
+
+
+        <div class="just">
+            <p>
+                He blinked his eyes, they felt sore and uncomfortably warm.
+            </p>
+            <p>
+                He closed his eyes for a moment, to lean back and to take a deep breath. His vision was dark and obscured by his eyelids.
+            </p>
+            <p>
+                He could hear a faint voice, layered between radio static. Someone was talking, the voice was alike, but it was not him. The rumbling of the rain slowly grew from faint to loud, hammering right above his head. A small jolt shook him, and he opened his eyes.
+            </p>
+            <p>
+                He was no longer in his room.
+            </p>
+            <p>
+                Surrounding him were monochrome LCD screens. This was not the first time he had seen this type of monitor up close. They glowed, each one having different color than the other.
+            </p>
+            <p>
+                He turned his eyes, to staring straight ahead, greeted, or rather shielded by a sheet of glass, wet from the rain outside. A pair sweeper arms moved from left to right, repeatedly, hopelessly trying to remove the rainwater from blocking their view.
+            </p>
+            <p class="r">"You are finally awake."</p>
+
+            <p class="l">"You... again? Nothing is real here... it... it is just... my thoughts...</p>
+
+            <p>
+                Beside him sat a familiar man. His appearance was not just familiar, but identical to him. His speech mimicked his as he muttered to himself. He never gave the man a name, mereley referring man as his reflection, his mirror. Because that man, and himself, were two sides of the same person.
+            </p>
+
+            <p class="l">"I... this... this is just a daydream..." He muttered, while his eyes rolled, looking around his landscape, but does not know where to put his focus.</p>
+
+            <p class="r">"Or maybe this is depersonalization, and maybe followed by derealization," the mirror remarked without looking away, his hands still tightly gripping the steering wheel.</p>
+
+            <p class="l">"I am mentally unwell..." The man sighed, shaking his head.</p>
+
+            <p class="r">"Hey, calm down. Everyone is mentally unwell, you are just being more honest about you own."</p>
+
+            <p>
+                Once in a while, every other second, there was a slight jolt. Only the calming rumble of the rain and the rumbling of the engine accompanied them in this temporary silcene. His mirror was focused on driving, while the man stared out of the windoes. Whatever this was, wherever this was, it did not seem right.
+            </p>
+            <p>
+                The sky was deep grey, the heavy rain is perpetual, but to their left and right there were rows of panels that stared upwards, even though there are no sunlight to catch.
+            </p>
+            
+            <p class="r">"Do not think too much about it, it is all just our imagination," said the mirror.</p>
+
+            <p class="r">"But hey, if you want to attach some symbolism to this, go ahead," the mirror stared at him for a moment.</p>
+
+            <p>
+                Not long after they arrived at old wooden house. Its color was faint under the pouring rain, but it felt familiar.
+            </p>
+
+            <p class="l">"What are we doing here?" the man asked even though he already knew the answer.</p>
+
+            <p class="r">"Helping you to write your story," his mirror answered. The answer is slightly different from what he had in mind. It was paraphrased in such a way.</p>
+
+            <p>
+                Rain soaked their backs as they ran out of their car towards the old house. The mirror remain silent, his mouth sealed, his eyes merely observing. While the man was stunned, for a short moment.
+            </p>
+
+            <p>
+                The man reached out to the wall with his right had, his fingers spread as he pressed his palm against the front wall of the house. The texture felt so real, even if its only a reconstruction from his memories. His fingers and palms could feel the roughness of the peeling paint, and the unevenness of the intact areas. It was the familiar roughness of oil paint with familiar color.
+            </p>
+            <p>
+                A creaking sound interrupted the pounding rain. The heavy momentum felt familiar as he pushed open the ironwood door, greeted by a messy, pitch-black mess. The plastic mat beneath his feet was torn, peeling, and brittle with age.
+            </p>
+            <p>
+                His mirror self followed him as they walked deeper into the house. Every other moment, a flash of lightning would pierce the windowpane, casting shadows to the mess of trash, choking dust, and inappropriate graffiti that were hiding under the darkness.
+            </p>
+
+            <p class="l">"This... this was my bedroom." The man muttered.</p>
+
+            <p>
+                They arrived in a room, separated from the outside only by thin plywood walls, with heavy rain pouring in through the open window, blown by the storm outside. Amidst the roar of the rain and the storm, a creaking sound can be heard faintly as the man pulled the window shut. The glass was sharp-edged from being shattered, but there was still enough glass left to block the wind and rain.
+            </p>
+            <p>
+                There was not much left here, just a mattress with torn and rotting fabric lying on the floor, an open chest of drawers, a desk with a computer on it, and a few tapi drives with loose ribbons.
+            </p>
+            <p class="l">"There was not much left here, nothing left to be written," said the man as turned towards his mirror self.</p>
+
+            <p>
+                His eyes followed to where his mirror self pointed, towards a computer on the floor desk. He knelt down, his hand brushing away the black grime that covered the CRT screen, and brushing away the debris that hide the keyboard beneath. Beneath the desk was a set of electronic devices, a cube-shaped CPU box unit. His finger pressed a button on the box unit, the whirring of the cooling fan and the squaking of the disk from the computer accompanied the sound of roar of the rain and wind from outside. The CRT screen flashed brightly, static, then it went black.
+            </p>
+        </div>
+
+
+
+        <div class="com">
+            <p>kata kunci/<span class="tran">/password</span></p>
+            <span>>:</span><span id="blip-com">_</span>
+        </div>
+
+
+
+        <div class="just">
+            <p>
+                The man sat down at the desk, unhesitated by the dirty floor. His hands typing, his fingers moved nimbly on the keyboard. Meanwhile, his mirror self remain standing, searching the chest of drawers for anything left behind. 
+            </p>
+        </div>
+
+        <div class="com">
+            <p>memuat pengakses pribadi/<span class="tran">/loading personal accessor </span></p>
+            <p>perintah suara aktif/<span class="tran">/voice command activated</span></p>
+            <p>memuat antarmuka/<span class="tran">/loading interface</span></p>
+            <p>silahkan muat sebuah kaset untuk memulai/<span class="tran">/please load a cassette to begin</span></p>
+        </div>
+
+        <div class="just">
+            <p>
+                Before he can utter any words, his mirror self handed him a tape drive. It was unlabeled, with the tape being wrinkled and rewound haphazardly.
+            </p>
+
+            <p class="l">"Thank you," said the man.</p>
+
+            <p class="r">His mirror self just nodded.</p>
+
+            <p>
+                The man inserted the tape into a slot in the box unit, then the screen changes.
+            </p>
+        </div>
+
+
+
+        <div class="com">
+            <p>kaset terdeteksi/<span class="tran">/tape inserted </span></p>
+            <p>membaca/<span class="tran">/reading</span></p>
+            <p>kerusakan fisik terdeteksi/<span class="tran">/physical damage detected</span></p>
+            <p>data korup, mencoba memulihkan/<span class="tran">/data corrupted, attempt to recover</span></p>
+        </div>
+
+
+
+        <div class="just">
+            <p class="l">"So... what is this?" Ask the man as he looked at his mirror self.</p>
+
+            <p class="r">His mirror self answered by simply pointing at the monitor screen.</p>
+
+            <p>The man turned his eyes towards the monitor screen.</p>
+        </div>
+
+
+        <div class="com">
+            <p>memori teracak/<span class="tran">/memory scrambled</span>
+            </p>
+            <p>perlu kueri pencarian/<span class="tran">/need search query </span>
+            </p>
+            <p>menunggu kueri/<span class="tran">/waiting query</span>
+            </p>
+            <p>aktivasi suara aktif/<span class="tran">/voice activation is active</span>
+            </p>
+            <p>silakan katakan "kueri" untuk mengaktifkan perintah suara/<span class="tran">/please say "query" to activate the listening </span>
+            </p>
+        </div>
+
+
+        <div class="just">
+            <p class="l">"Is this serious?" The man looked at his mirror self once again.</p>
+
+            <p class="r">His mirror self stepped forward, sitting beside him, sitting on the same floor.</p>
+
+            <p class="r">"Yes," said the mirror softly.</p>
+
+            <p class="l">"What should I say?" the man asked, while never turning his eyes to somewhere else.</p>
+
+            <p class="r">"Anything."</p>
+
+            <p class="l">"But what?"</p>
+
+            <p class="r">"Maybe... Something that you want to write."</p>
+
+            <p class="l">"But, what I want to write?" Ask the man as his voice low and strained. He knew that his mirror self knew.</p>
+
+            <p class="r">"Something... about our parents," his mirror self spoke what was on their minds. His tone was gentle, there was no judgement.</p>
+
+            <p>
+                The man immediately looked away, returning his gaze to the computer screen. Silence befalls upon him for a moment, the edge of his vision blurred, his eyes focused, and the slight pressure he felt on his fingers fades away as he moved his fingers away from the keyboard. He already knew the answer, because they were both the same person. However, he is afraid of that answer, afraid of the heavy memories that may come with it.
+            </p>
+
+            <p>
+                Moments passed, no one knows for how long. Even the roar of the rain and wind, the clap of tjunder, and the flashes of lighting, all seems smudged and blurred into a point in time. For a moment, they both allowed themselves to be swept away.
+            </p>
+
+            <p>
+                His mouths slowly opened, but soundless, breathless, and hesitant. Until finally, his vocal cords began to vibrate.
+            </p>
+
+            <p class="l">"Query: time of mourning," he said softly, his voice drowned by the weather.</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "time of mourning"/<span class="tran">/searching for "time of mourning"</span>
+            </p>
+            <p>ditemukan kueri terkoneksi/<span class="tran">/found more connected queries </span>
+            </p>
+            <p>daftar/<span class="tran">/listing</span>
+            </p>
+            <p>"fragmentations"</p>
+        </div>
+
+
+
+        <div class="just">
+            <p class="l">
+                "What does it mean?" The man looks back at his mirror self, confused despite knowing his mirror self may be confused too.
+            </p>
+
+            <p class="r">"Just follow through," his mirror self replied softly, reassuring him.</p>
+
+            <p>
+                The man turned his attention back to the computer screen, red texts etched on a black and blank CRT canvass. The screen remained unblinking, waiting without judgement. The man took a breath, holding it for a moment. 
+            </p>
+
+            <p class="l">"Query: fragmentations," finally the man breathes out.</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "fragmentations"/<span class="tran">/searching for "fragmentations"</span>
+            </p>
+            <p>fragmentasi memori terdeteksi/<span class="tran">/memory fragmentation detected </span>
+            </p>
+            <p>daftar seluruh memori yang ditemukan/<span class="tran">/listing all found memories</span>
+            </p>
+                xx-xx-2011-a
+                <br>xx-xx-2011-c
+                <br>xx-xx-2015-a
+                <br>xx-xx-2015-b
+                <br>xx-xx-2015-c
+                <br>xx-xx-2015-d
+                <br>xx-xx-2015-e
+            <br>
+            <p>memori terfragmentasi tidak berkaitan dengan kueri apapun dan harus di eksplorasi secara manual/<span class="tran">/fragmented memories are not associated with any queries and have to be explored manually</span>
+            </p>
+            <p>waiting for query/<span class="tran">/menunggu kueri</span>
+            </p>
+        </div>
+
+
+        <div class="just">
+            <p class="l">"I... I-I forgot all of that?"</p>
+
+            <p class="l">"I... I forgot them all?" he asked, when faced by fragmentation that led him to the implication that he had forgotten.</p>
+
+            <p class="l">"Am... Am I..." he did not have time to finish his words.</p>
+
+            <p class="r">"It is not like that," his mirror self replied, as he wrapped his hands around him from behind.</p>
+
+            <p>It feels like an emulation. The pressure and the the warmth were non-existent and were not there, wheter it was from their bodies pressed together, or from the hug. It was simply just their way of portraying what a hug would be like.</p>
+
+            <p class="r">"Do not think about unnecessary things," his mirror self whispered softly, trying to calm his other half.</p>
+
+            <p class="r">"Maybe you forget because it is a response to trauma, or maybe because your life keep moving on without a pause...</p>
+
+            <p class="r">"Or... or maybe it just because... you are getting older."</p>
+
+            <p class="l">"But... what if I forget them on purpose?" the man asked, his hands trying to pull his other half, tightening the distance between him and himself.</p>
+
+            <p class="r">"It is alright... because we already here, trying to remember them all, if only just the fragmentation."</p>
+
+            <p>Silence. Only the rumbling of the rain and the occasional crack of the thunder filled the void between them. Even in an emulation, the man did not want to break this silence, for he is afraid of what he would face, of what he would find in that old computer.</p>
+
+            <p class="r">"We have to investigate," his mirror self finally break the comforting silence between them.</p>
+
+            <p class="l">"But..."</p>
+
+            <p class="l">"But... I am afraid, because that is why I buried them all..." the man's voice was sombre.</p>
+
+            <p class="r">"Let us just face it. The memories and the pain, whether it is there or not."</p>
+
+            <p class="r">"Because I am you, and what you feel I also feel."</p>
+
+            <p class="r">"I will try to accompany you," his mirror self tried to reassure themselves.</p>
+
+            <p>Slow and hesitant, as the man pushed himself away. His eyes closed for a moment as he takes a deep breath, and when he opened them, his pupiles were taking in the light from the computer screen.</p>
+
+            <p class="r">"We will see one by one," said his mirror self softly.</p>
+
+            <p>The man simply just nodded. He faced the computer, and his chest moved as he takes a breath for a moment.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one three dash A," he said softly, almost quietely, but the computer still heard him, because the screen flickered.</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "xx-xx-2011-a"/<span class="tran">/searching for "xx-xx-2011-a"</span>
+            </p>
+            <p>ditemukan satu memori, menampilkan/<span class="tran">/found one memory, displaying</span>
+            </p>
+            <p>memory/<span class="tran">/memori</span>:
+            </p>
+            <p>evening <span class="miss">[MISSING DATA]</span> a boy was <span class="miss">[MISSING DATA]</span> an old man was <span class="miss">[MISSING DATA]</span> whispers of prayers <span class="miss">[MISSING DATA]</span> cries <span class="miss">[END OF MEMORY]</span></p>
+            <p>
+                <span class="tran"></span>
+            </p>
+            <p>fragmentasi terdeteksi, rekonstruksi?/<span class="tran">/fragmentation detected, reconstruct?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="l">"I... we forgot them?"</p>
+
+            <p>He froze in place, his eyes fixed, silently shone by the dim CRT light. Then, his eyes rolled from left to right, scanning the text on the screen from beginning to end, over and over again. The memories were faint, buried beneath the fragmentation.</p>
+
+            <p class="r">"No... we did not forgot them."</p>
+
+            <p class="r">"It all happened before we can understand them."</p>
+
+            <p>The man looked at the computer. His mouth opened, he breathed out a sound, an order.</p>
+
+            <p class="l">"Query: recons-"</p>
+
+            <p class="r">"Do not," his mirror self intercepted, covering his mouth with the palm of his hand.</p>
+
+            <p>The man went silent for a moment as the mirror self draw his hand away. The man looked at his mirror self, but he averted his eyes.</p>
+
+            <p class="r">"I... I am afraid..."</p>
+
+            <p class="l">"What should we be afraid of?"</p>
+
+            <p class="r">"I am afraid that... whatever that will be reconstructed, will say something about us."</p>
+
+            <p>The man's eyes dropped, staring down to nowhere in particular, as he too wanted to avoid the gaze from his mirror self.</p>
+
+            <p class="l">"If so... we will just explore for now," said the man, as he lifted his gaze up, looking at his mirror self.</p>
+
+            <p class="r">Hesitant, afraid, ashamed. His mirror self rolled his eyes toward his other half, then nodded just slightly.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one three dash C."</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "xx-xx-2011-c"/<span class="tran">/searching for "xx-xx-2011-c"</span>
+            </p>
+            <p>ditemukan satu memori, menampilkan/<span class="tran">/found one memory, displaying </span>
+            </p>
+            <p>memori/<span class="tran">/memory </span>
+            </p>
+            <p>
+                once upon a rainy day <span class="miss">[MISSING DATA]</span> a casket <span class="miss">[MISSING DATA]</span> cries <span class="miss">[END OF MEMORY]</span>
+            </p>
+            <p>fragmentasi terdeteksi, rekonstruksi?/<span class="tran">/fragmentation detected, reconstruct?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="r">"Did you think our mind would not remember them?" his mirros self asked without looking at him, as his eyes were fixed to the computer screen.</p>
+
+            <p>The man take a deep breath for a moment, his eyes were also fixed and focused, reading from left to right as his mind tries to fill up the details that were replaced by <span class="miss">[MISSING DATA]</span></p>
+
+            <p class="l">"Maybe as you said, it is all happened before we could understand any of it," the man replied, trying to reassure themselves.</p>
+
+            <p>The man regained his focus, his lips parted, saying the next query.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one six dash A."</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "xx-xx-2015-a"/<span class="tran">/searching for "xx-xx-2015-a"</span>
+            </p>
+            <p>ditemukan satu memori, menampilkan/<span class="tran">/found one memory, displaying</span>
+            </p>
+            <p>memori/<span class="tran">/memory</span>:
+            </p>
+            <p>
+                in a gloomy kitchen, a boy was standing alone. his hands rested on a table, his eyes looked down, accompanied by a tempting synthetic and chemical scent. nobody want to cook for him, nobody can cook for him, so this is the only meal he can cook for himself and his little brother <span class="miss">[END OF MEMORY]</span></p>
+        </div>
+
+        <div class="just">
+            <p>Without looking at each other, with eyes still fixed to the screen, they talked, while reading what is being displayed.</p>
+
+            <p class="r">"It is not a story, let alone a memory."</p>
+
+            <div class="l">"I know, but this is the only thing that came up, a justification."</div>
+
+            <div class="r">"Of what?"</div>
+
+            <div class="l">"Comfort food."</div>
+
+            <p class="r">"So unimportant and trivial."</p>
+
+            <p class="l">"Maybe it is to others."</p>
+
+            <p class="r">"Our comfort food were associated with one of the most uncomfortable time in our life?"</p>
+
+            <p class="l">"It is weird, is it not?"</p>
+
+            <p>They went silent for a moment, accompanied by the gentle rumble of the rain and the dim light of the computer screen. Then, the man looked at his mirror self.</p>
+
+            <p class="l">"We still want to look deeper?" the man questioned his other half.</p>
+
+            <p class="r">"Yes," the mirror replied almost quietely, looking at him.</p>
+
+            <p>They moved their attention back to the computer screen, to face whatever it has to sat about themselves.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one six dash B."</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "xx-xx-2015-b"/<span class="tran">/searching for "xx-xx-2015-b"</span>
+            </p>
+            <p>ditemukan satu memori, menampilkan/<span class="tran">/found one memory, displaying </span>
+            </p>
+            <p>memori/<span class="tran">/memory</span>:
+            </p>
+            <p>
+                the boy's eyes were looking from behind a glass pane, looking into a sterile white room. a woman was lying down helplessly on a bed. her eyes were closed, a <span class="miss">[MISSING DATA]</span>. his eyes want to look away, but not because <span class="miss">[MISSING DATA]</span> or <span class="miss">[MISSING DATA]</span>, or because <span class="miss">[MISSING DATA]</span>. but because <span class="miss">[MISSING DATA]</span> <span class="miss">[END OF MEMORY]</span></p>
+            <p>fragmentasi terdeteksi, rekonstruksi?/<span class="tran">/fragmentation detected, reconstruct?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="l">The man lean on his hands on the table, with eyes fixed to the screen, reading the displayed text from left to right for the umpteenth time. The man scratched his head as he realized about something.</p>
+
+            <p class="r">"Well... it is maybe because lately, you always write from third person perspective," said his mirror self, already reading what is in their mind.</p>
+
+            <p class="l">"Or maybe, we are afraid," his mirror self continued, repeating the sentence that have already appeared many times.</p>
+
+            <p class="l">"We are always afraid," the man chuckled.</p>
+
+            <p>The man lean away from his hands, and he finally spoke.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one six dash C."</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "xx-xx-2015-c"/<span class="tran">/searching for "xx-xx-2015-c"</span>
+            </p>
+            <p>ditemukan satu memori, menampilkan/<span class="tran">/found one memory, displaying </span>
+            </p>
+            <p>memori/<span class="tran">/memory</span>:
+            </p>
+            <p><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[END OF MEMORY]</span></span>
+            </p>
+            <p>fragmentasi terdeteksi, rekonstruksi?/<span class="tran">/fragmentation detected, reconstruct?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="r">"What happened?"</p>
+            <p class="l">"I do not know."</p>
+            <p class="l">"Query: X X dash X X dash two zero one six dash D."</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "xx-xx-2015-d"/<span class="tran">/searching for "xx-xx-2015-d"</span>
+            </p>
+            <p>ditemukan satu memori, menampilkan/<span class="tran">/found one memory, displaying </span>
+            </p>
+            <p>memori/<span class="tran">/memory</span>:
+            </p>
+            <p><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[END OF MEMORY]</span></span>
+            </p>
+            <p>fragmentasi terdeteksi, rekonstruksi?/<span class="tran">/fragmentation detected, reconstruct?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p>They went silent for a moment, yet again. The CRT screen buzzed softly in a moment of waiting, the noise mixed seamlessly with the whispers of their breathing and the rumble of the rain.</p>
+
+            <p class="r">"Are we really forgetting them?" asked his mirror self.</p>
+
+            <p class="l">"There is... there is still one more memory..." the man replied, his voice faltered in a moment of doubt.</p>
+
+            <p class="l">"Query: X X dash X X dash two zero one six dash D."</p>
+        </div>
+
+        <div class="com">
+            <p>mencari "xx-xx-2015-e"/<span class="tran">/searching for "xx-xx-2015-e"</span>
+            </p>
+            <p>ditemukan satu memori, menampilkan/<span class="tran">/found one memory, displaying </span>
+            </p>
+            <p>memori/<span class="tran">/memory</span>:
+            </p>
+            <p><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[MISSING DATA]</span><span class="miss">[END OF MEMORY]</span></span>
+            </p>
+            <p>fragmentasi ganda terdeteksi, rekonstruksi masal?/<span class="tran">/multiple fragmentations detected, mass reconstruct?</span>
+            </p>
+        </div>
+
+        <div class="just">
+            <p class="r">"I do not want to distract you with unnecessary internal dialogue," said his mirror self, alreadt read what his other self was going to do.</p>
+
+            <p>The man wan to say something, his lips already half parted, but he hesitated. Yet, he finally spoke.</p>
+
+            <p class="l">"You... you can leave me."</p>
+
+            <p class="r">"I would not leave you. I will follow you as yourself, because you are me."</p>
+
+            <p>The man nodded, then looked away, bringing his gaze back to the screen. Thumped, his heart is. Parted, his lips.</p>
+
+            <p class="l">"Query: reconstruct."</p>
+        </div>
+
+        <div class="com">
+            <p>kueri khusus diterima, merekonstruksi/<span class="tran">/special query accepted, reconstructing</span>
+            </p>
+            <p>mencari melalui/<span class="tran">/searching through</span>:
+            </p>
+                "time of mourning"
+                <br>"fragmentasi"
+                <br>xx-xx-2011-a
+                <br>xx-xx-2011-c
+                <br>xx-xx-2015-a
+                <br>xx-xx-2015-b
+                <br>xx-xx-2015-c
+                <br>xx-xx-2015-d
+                <br>xx-xx-2015-e
+            <br>
+            <p>mengakses memori acak sebagai titik permulaan/<span class="tran">/accessing random memory as starting point</span>
+            </p>
+            <p><span class="tran" id="kueri">fragmentations</span>
+            </p>
+            <p>membangun ulang memori/<span class="tran">/rebuilding memories</span>
+            </p>
+            <p>PERINGATAN: TERDETEKSI KEBOCORAN MEMORI/<span class="tran">/WARNING: MEMORY LEAK DETECTED</span>
+            </p>
+            <br>
+            <br>
+            <button class="tb" id="reset"><b>TEKAN INI UNTUK RESET//PRESS THIS TO RESET>>></b></button>
+        </div>
+    </div>
+
+    <div id="tab2" style="display: none;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="just">
+            <p>It is dark, with nothing but the dim CRT screen. It is quiet, the rumble of the rain vanishes, as if the rain just dried up in an instant, with nothing left.</p>
+        </div>
+
+        <div class="com">
+            <p>kueri khusus diterima, merekonstruksi/<span class="tran">/special query accepted, reconstructing</span>
+            </p>
+            <p>mencari melalui/<span class="tran">/searching through</span>:
+            </p>
+                "masa duka"
+                <br>"fragmentasi"
+                <br>xx-xx-2011-a
+                <br>xx-xx-2011-c
+                <br>xx-xx-2015-a
+                <br>xx-xx-2015-b
+                <br>xx-xx-2015-c
+                <br>xx-xx-2015-d
+                <br>xx-xx-2015-e
+            <br>
+            <p>mengakses memori acak sebagai titik permulaan/<span class="tran">/accessing random memory as starting point</span>
+            </p>
+            <p><span class="tran">fragmentations/time of mourning/hospital/noodle/mother/death/father/life/loneliness</span>
+            </p>
+            <p>membangun ulang memori/<span class="tran">/rebuilding memories</span>
+            </p>
+            <p>PERINGATAN: TERDETEKSI KEBOCORAN MEMORI/<span class="tran">/WARNING: MEMORY LEAK DETECTED</span>
+            </p>
+            <br>
+            <br>
+            <button class="tb"><b>TEKAN INI UNTUK RESET//PRESS THIS TO RESET</b></button>
+        </div>
+
+        <div class="just">
+            <p>In the corner of his vision, a shadow was passing, followed by sound of footsteps, then ended by a gentle thump. The man stands up, then walk outside of his room.</p>
+
+            <p>Dark, but not without any light. It is dark, as if the twilight itself was eated by the clouds.</p>
+
+            <p class="l">"Hey you-"</p>
+
+            <p>His voice went unanswered, but the same gentle thump followed. The man stopped walking, and simply just observed. The dim, transparent glow of the light came from a boy. The boy stand by a dining table, with two bowls in front of him.</p>
+
+            <p>That gentle thump was repeated, when that dim glow of light repeated a motion, of placing two bowls on the dining table.</p>
+
+            <p class="m">"Ka-"</p>
+            <p class="m">"Kaka-"</p>
+            <p class="m">"Ka-"</p>
+
+            <p>Another hologram shows up, and like a tangled cassette tape, the hologram froze, then moved with repeated laggy motion, the voice being played repeatedly.</p>
+
+            <p>The repeated clicks of a cassette tape being pulled can be heard, and with it the two holographic figures dissapeared after blinkinhg and glitching out.</p>
+
+            <p>Muffled cries can be heard coming somewhere between the darkness and the silence, followed by a red glow that was coming from a door. The man walked, step by step. Between the silence and the muffled cries, he can hear and feel his heart thumping and beating in his chest, he can heat the short hiss of each draw of his breath.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>The man froze, just observing from the door frame. Inside, an old man was lying helplessly, with eyes wide open. To the side, a familar boy was whispering to his ear.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>The scene replayed over and over again, as if playing from damaged or unwound cassette tape. The motion was laggy and jumpy, skipping and repeating frames, and froze. The sound also repeated and missing, never ending.</p>
+
+            <p>Click, click, click. The sould of a cassette tape being pulled was heard again.</p>
+
+            <p>Muffled cries can be heard from somewhere else, followed by a commotion of a crowd reciting some prayers, but the sound keeps repeating and lagging, with uneven volume.</p>
+
+            <p>The man walked slowly through a door. Dim glow of holographic light illuminates the living room. People sat in rows on the side of the room, with their hands holding a small book. Their lips moved, reading solemnly, but there was no voice anymore.</p>
+
+            <p>At the end of the room, there were two boys sitting facing a dead body.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>The voice of two boys were intermittent, repeated over and over like radio static, as they read a book. Between the static, the man can hear the gasps of breath, broken and sorrowful voices. On the cheeks of the two boys, lines of tears, motionless, unshed, only trailing along. Before them was the body of a woman wrapped in white shroud.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>The man paused in his steps, as he did not want to walk any further or to see any closer. He was afraid to move forward, afraid to see what was left of him. The entire scene shifted, becoming more distant, as if in different dimension.</p>
+
+            <p>The holographic scene repeated.</p>
+
+            <p>Muffled cries. It was faintly audible, even between and amidst the silence. A dim glow of light shone from a door. One step, two steps, the man carried himself. His heartbeat pounded, his breaths short and rapid.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>The man stand still once again, just observing from afar. Inside, an old man was lying helplessly, with eyes wide open. To the side, a familar boy was whispering to his ear.</p>
+
+            <p class="m">"Ash-"</p>
+            <p class="m">"Asha-"</p>
+            <p class="m">"Ahsadu-"</p>
+            <p class="m">"Ash-"</p>
+
+            <p>The scene replayed over and over again, as if playing from damaged or unwound cassette tape. The motion was laggy and jumpy, skipping and repeating frames, and froze. The sound also repeated and missing, never ending.</p>
+
+            <p>The holograpic scene repeated itself.</p>
+
+            <p>People sat in rows on the side of the room, with their hands holding a small book. Their lips moved, reading solemnly, but there was no voice anymore.</p>
+
+            <p>At the end of the room, there were two boys sitting facing a dead body.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>The voice of two boys were intermittent, repeated over and over like radio static, as they read a book. Between the static, the man can hear the gasps of breath, broken and sorrowful voices. On the cheeks of the two boys, lines of tears, motionless, unshed, only trailing along. Before them was the body of a woman wrapped in white shroud.</p>
+
+            <p class="m">"Bis-"</p>
+            <p class="m">"Bismi-"</p>
+            <p class="m">"Bismillah-"</p>
+            <p class="m">"Bis-"</p>
+
+            <p>The man paused in his steps, as he did not want to walk any further or to see any closer. He was afraid to move forward, afraid to see what was left of him. The entire scene shifted, becoming more distant, as if in different dimension.</p>
+
+            <p>The man keep walking back, not out of indifference, but with a hope. A small hope, that he might another memories of them, whatever it was.</p>
+
+            <div class="red-gradient">
+                <div class="two-columns-grid">
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>Muffled cries. It was faintly audible, even between and amidst the silence. A dim glow of light shone from a door. One step, two steps, the man carried himself. His heartbeat pounded, his breaths short and rapid.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The man stand still once again, just observing from afar. Inside, an old man was lying helplessly, with eyes wide open. To the side, a familar boy was whispering to his ear.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The scene replayed over and over again, as if playing from damaged or unwound cassette tape. The motion was laggy and jumpy, skipping and repeating frames, and froze. The sound also repeated and missing, never ending.</p>
+                    </div>
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>People sat in rows on the side of the room, with their hands holding a small book. Their lips moved, reading solemnly, but there was no voice anymore.</p>
+
+                        <p>At the end of the room, there were two boys sitting facing a dead body.</p>
+
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+
+                        <p>The voice of two boys were intermittent, repeated over and over like radio static, as they read a book. Between the static, the man can hear the gasps of breath, broken and sorrowful voices. On the cheeks of the two boys, lines of tears, motionless, unshed, only trailing along. Before them was the body of a woman wrapped in white shroud.</p>
+
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="two-columns-grid">
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>Muffled cries. It was faintly audible, even between and amidst the silence. A dim glow of light shone from a door. One step, two steps, the man carried himself. His heartbeat pounded, his breaths short and rapid.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The man stand still once again, just observing from afar. Inside, an old man was lying helplessly, with eyes wide open. To the side, a familar boy was whispering to his ear.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The scene replayed over and over again, as if playing from damaged or unwound cassette tape. The motion was laggy and jumpy, skipping and repeating frames, and froze. The sound also repeated and missing, never ending.</p>
+                    </div>
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>People sat in rows on the side of the room, with their hands holding a small book. Their lips moved, reading solemnly, but there was no voice anymore.</p>
+
+                        <p>At the end of the room, there were two boys sitting facing a dead body.</p>
+                                
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                                
+                        <p>The voice of two boys were intermittent, repeated over and over like radio static, as they read a book. Between the static, the man can hear the gasps of breath, broken and sorrowful voices. On the cheeks of the two boys, lines of tears, motionless, unshed, only trailing along. Before them was the body of a woman wrapped in white shroud.</p>
+                                
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="two-columns-grid">
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>Muffled cries. It was faintly audible, even between and amidst the silence. A dim glow of light shone from a door. One step, two steps, the man carried himself. His heartbeat pounded, his breaths short and rapid.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The man stand still once again, just observing from afar. Inside, an old man was lying helplessly, with eyes wide open. To the side, a familar boy was whispering to his ear.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The scene replayed over and over again, as if playing from damaged or unwound cassette tape. The motion was laggy and jumpy, skipping and repeating frames, and froze. The sound also repeated and missing, never ending.</p>
+                    </div>
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>People sat in rows on the side of the room, with their hands holding a small book. Their lips moved, reading solemnly, but there was no voice anymore.</p>
+
+                        <p>At the end of the room, there were two boys sitting facing a dead body.</p>
+                                
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                                
+                        <p>The voice of two boys were intermittent, repeated over and over like radio static, as they read a book. Between the static, the man can hear the gasps of breath, broken and sorrowful voices. On the cheeks of the two boys, lines of tears, motionless, unshed, only trailing along. Before them was the body of a woman wrapped in white shroud.</p>
+                                
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="two-columns-grid">
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>Muffled cries. It was faintly audible, even between and amidst the silence. A dim glow of light shone from a door. One step, two steps, the man carried himself. His heartbeat pounded, his breaths short and rapid.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The man stand still once again, just observing from afar. Inside, an old man was lying helplessly, with eyes wide open. To the side, a familar boy was whispering to his ear.</p>
+
+                        <p class="m">"Ash-"</p>
+                        <p class="m">"Asha-"</p>
+                        <p class="m">"Ahsadu-"</p>
+                        <p class="m">"Ash-"</p>
+
+                        <p>The scene replayed over and over again, as if playing from damaged or unwound cassette tape. The motion was laggy and jumpy, skipping and repeating frames, and froze. The sound also repeated and missing, never ending.</p>
+                    </div>
+                    <div>
+                        <p>The holograpic scene returned.</p>
+
+                        <p>People sat in rows on the side of the room, with their hands holding a small book. Their lips moved, reading solemnly, but there was no voice anymore.</p>
+
+                        <p>At the end of the room, there were two boys sitting facing a dead body.</p>
+                                
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                                
+                        <p>The voice of two boys were intermittent, repeated over and over like radio static, as they read a book. Between the static, the man can hear the gasps of breath, broken and sorrowful voices. On the cheeks of the two boys, lines of tears, motionless, unshed, only trailing along. Before them was the body of a woman wrapped in white shroud.</p>
+                                
+                        <p class="m">"Bis-"</p>
+                        <p class="m">"Bismi-"</p>
+                        <p class="m">"Bismillah-"</p>
+                        <p class="m">"Bis-"</p>
+                    </div>
+                </div>
+                <div class="just">
+                    <p>The man keep walking back, as his hope faded away, engulfed by the heavy memories. All red, nothing was left. All that remains is only those two, with no happy memories, no bad memories, no neutrality, nor life, all that is left is only two memories about deaths, and it all keeps repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and repeating, repeating, and-</p>
+                </div>
+            </div>
+        </div>
+        <div class="just">
+            <p class="r">"Enough."</p>
+            
+            <p class="r">"Do not blame ourselves."</p>
+
+            <p class="r">"All of it happened when we were so young, so naive and so childish."</p>
+
+            <p class="r">"No matter how far we step back, there is not much we remember from that time, or before."</p>
+
+            <p class="r">"So, that is enough."</p>
+
+            <button class="tb" id="terang"><span style="font-size: 14pt;">Let there be light>>></span></button>
+        </div>
+    </div>
+
+    <div id="tab3" style="display: none; background-color: white; color: black; padding: 10px; margin: 10px;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>The man does not know where he is at this moment.</p>
+
+        <p>He is no longer stepping back. Left, right, left, right, his legs alternated, carrying him forward, walking through the blinding light. Ahead stood a wall, with a closed door.</p>
+
+        <p>His hand reached out, turning the doorknob, then he stepped in. A familiar face was waiting for him.</p>
+
+        <p class="r whit">"You are back," the familiar face greeted.</p>
+
+        <p class="r whit">"I have seen it all, with you, as you."</p>
+
+        <p>The man caught a whiff of a familiar and appetizing aroma. His eyes searched for its source, and finally his gaze landed on a bowl held by his mirror self.</p>
+
+        <p class="r whit">"For you," his mirror self offered, gently pushing the bowl across the table.</p>
+
+        <p>The man remain silent, as he gently put himself on a chair by the table. He pulled the bowl towards him. His fingers hold the fork and the spoon, and he began to savor it. The salty savory broth, the long and chewy noodle. This bowl of noodles was not only delicious, but also  familiar. It not only filled his hunger, but also gave him an illusion of control amidst the uncertainties, that everything will be okay.</p>
+        
+        <p class="r whit">"After all that, you are still here," said his mirror self, softly.</p>
+
+        <p class="l whit">"Yes... We are still here," the man corrected him.</p>
+
+        <p>The fork and the spoon clinked together, as the man continued eating his noodles.</p>
+
+        <p class="r whit">"After all that. After the bridge and the rope crossed our minds... we did not do it."</p>
+
+        <p class="l whit">"It is all... it is all just merely crossed our mind."</p>
+
+        <p class="r whit">"Even then, we are still here."</p>
+
+        <p>Silence befalls upon them, only filled by the occasional clinking when the man continued to ead <i>his</i> noodles.</p>
+
+        <p class="r whit">"Living without guidance, without someone to look up to, without certainty."</p>
+
+        <p class="r whit">"Even now, we are still confused, still without direction."</p>
+
+        <p>The man stay still for a moment. The noodles on his fork stopped just before it crossed the threshold of his lips. He then slowly put the two cutlery back into the bowl.</p>
+
+        <p class="r whit">"Envious of them who were loved, who have someone to look up to."</p>
+
+        <p class="r whit">"It is been years, since we ever said <i>"mother"</i> or <i>"father"</i> without feeling guilty."</p>
+
+        <p class="r whit">"And it turns out, so little of them remains with us..."</p>
+
+        <p class="r whit">"If we dare to hope for a long life... we will live without them longer than we did with them."</p>
+
+        <p class="l whit">"Even then, we are still here."</p>
+
+        <p class="r whit">"Broken, brittle, lacking, always seen as lowly."</p>
+
+        <p class="l whit">Yes. But... we are still here."</p>
+
+        <p class="l whit">"We-"</p>
+
+        <p>It felt cold, it felt wet. The man's breath was heavy, each breath shallow. He brought his hands to his face, wetness flowing down his cheeks from his eyes.</p>
+
+        <p class="l whit">"We... I am still..."</p>
+
+        <p>He tried to wipe them off, but it did not stop flowing down. While his breaths comes heavier, it is harder for him to speak up.</p>
+
+        <p class="l whit">"I... I am... I am still here."</p>
+
+        <p class="l whit">"I am still here..."</p>
+
+        <p>Between the void of the silence that enveloped them, there is only the faint cries from the man. It felt so tight to hold, so he lean back, looking up, not caring of who heard or saw him. Tears flowing down like an unending rain. He cannot hold his voice anymore.</p>
+
+        <br>
+        <br>
+        <br>
+
+
+        <div style="margin: -10px; padding: 10px; background-color: black;">
+            <br>
+            <button class="tb" id="gelap"><span style="font-size: 14pt;">return>>></span></button>
+            <br>
+        </div>
+    </div>
+
+    <div id="tab4" style="display: none;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="just">
+            <p>Nothing else was here but himself. Nothing else he can feel but his heavy breathing, and the dampness of his cheeks.</p>
+
+            <p>Lights were piercing his eyes.</p>
+
+            <p>He returned, carrying what little left from his seach for memories. His breathing was still heavy, still sobbing. He brushed his cheeks and eyes, wiping away traces of tears. Slowly, he lifted his gaze. The black white scree, was not blank anymore.</p>
+
+            <div id="output"></div>
+
+            <p>His hands reached out to the keyboard, and his fingers moved, pressing down the keys.</p>
+
+            <div style="background-color: white; color: black; padding: 10px; margin: 25px;">
+                <p><b>Author's note:</b></p>
+                <p>
+                    This was the heaviest story I have ever written so far. Not only from the technical side, but mainly emotionally. I will not be ashamed to admit, during the course of writing, I cried twice. And between 11 days of writing, I have to take a pause for two days.
+                </p>
+                <p>
+                    I hope none of you understand. Because to me, to understand me is to go through the same pain.
+                </p>
+                <p>
+                    I tried, to pull further back. Not just to remember them, but also to remember my childhood.
+                </p>
+                <p>
+                    Nothing was left.
+                </p>
+                <p>
+                    No names, no faces, no voices.
+                </p>
+                <p>
+                    So it is whit them. Their voices have completely faded away from my memory. Their faces were hazy.
+                </p>
+                <p>
+                    No other choice, for me personally, but not only to let them go, but also to let go of my memories about them. 
+                </p>
+                <p>
+                    Because, like it or not, aside from parental ties, not much of them have left a lasting impression in me.
+                </p>
+                <p>
+                    Maybe I am evil, maybe I am seditious, or hopefully this is just a step in pragmatism.
+                </p>
+                <p>
+                    Judge me, if you wish.
+                </p>
+                <p>
+                    Here lies, how it is, me memories of them.
+                </p>
+            </div>
+            <br><br><br><br><br>
+                <div class="com">
+                    <p>
+                        In the original version, here there was a statement of PERSONAL entering hiatus effectively immediately, after it is published. But, here I will just say thank you for coming by.
+                    </p>
+                    <p>
+                        Feel free to look around and see, though most of my writings are in Bahasa Indonesia. But, as you notice most if not all of them is licensed in some version of Creative Common license. So, feel free to translate them if you wish.
+                    </p>
+                    <p>
+                        This blog is rarely updated, it is just a dumping ground of my writing. But one thing remain certain, I will never stop writing, for as long as I live.
+                    </p>
+                    <p>
+                        Thank you, for coming by.
+                    </p>
+                    <button class="tb" id="reset-page" onclick="location.reload();"><b>TEKAN INI UNTUK RESET//PRESS THIS TO RESET>>></b></button>
+
+                    <button class="tb" id="to-hub" onclick="document.location='https://fauxnet.blogspot.com/p/personal-hub.html'"><b>TEKAN INI UNTUK KEMBALI KE HUB//PRESS THIS TO RETURN TO HUB>>></b></button>
+
+                    <button class="tb" id="music-end" onclick="document.location='https://www.youtube.com/watch?v=VhgzYRpapMQ'"><b>TO ENDING MUSIC (not mine)>>></b></button>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/Hakase-Hamdani/fauxnet-scripts@2025c36e0d3fa8e74ba00e95bda67ddcf6347853/fauxnet_scripts.js"></script>
+
+    <script>
+        /*THIS IS FOR CYCLING TEXT WITHOUT "GLITCH" EFFECT*/
+        function changeText(targetId, changeInterval, textArray) {
+            let index = 0;
+            const element = document.getElementById(targetId);
+        
+            if (!element) {
+                console.error(`Element with ID '${targetId}' not found.`);
+                return;
+            }
+        
+            // Immediately set the first text
+            element.textContent = textArray[index];
+        
+            // Set interval for cycling text
+            setInterval(() => {
+                index = (index + 1) % textArray.length; // Cycle back to 0 after reaching the end
+                element.textContent = textArray[index];
+            }, changeInterval);
+        }
+        /*THIS IS FOR CYCLING TEXT WITHOUT "GLITCH" EFFECT*/
+        /*-----------------------------*/
+        /*THIS IS TO HIDE/UNHIDE ELEMENT IN ONE CLICK BUTTON*/
+        function hideUnhide(buttonId, hideThisId, unhideThisId, jumpToId) {
+            const button = document.getElementById(buttonId);
+            const hideElement = document.getElementById(hideThisId);
+            const unhideElement = document.getElementById(unhideThisId);
+            const jumpTarget = document.getElementById(jumpToId);
+
+            if (!button || !hideElement || !unhideElement || !jumpTarget) {
+                console.error(`One or mmyButtonore elements not found: '${buttonId}', '${hideThisId}', '${unhideThisId}', '${jumpToId}'`);
+                return;
+            }
+        
+            button.addEventListener('click', () => {
+                hideElement.style.display = 'none';
+                unhideElement.style.display = '';
+            
+                // Scroll to the newly shown element
+                jumpTarget.scrollIntoView({
+                    behavior: 'auto', // Smooth scroll animation
+                    block: 'start'      // Align to top of viewport
+                });
+            });
+        }
+        /*THIS IS TO HIDE/UNHIDE ELEMENT IN ONE CLICK BUTTON*/
+        /*------------------------------*/
+        /*this one kinda crazy. THIS TAKES CONTENTS OF <body> AS INPUT, THEN OUTPUT IT INTO A SELECTED ELEMENT*/
+        window.addEventListener('DOMContentLoaded', () => {
+            const bodyContent = document.body.innerHTML;
+            const outputElement = document.getElementById('output');
+
+            outputElement.textContent = bodyContent;
+        });
+        
+
+        /*this one kinda crazy. THIS TAKES CONTENTS OF <body> AS INPUT, THEN OUTPUT IT INTO A SELECTED ELEMENT*/
+
+        cycleText('ttl', ["AKSES MEMORI ACAK", "RANDOM ACCESS MEMORIES"]);
+        startBlip('blip-cursor', 500);
+        startBlip('blip-com', 500);
+        changeText('kueri', 250, ["fragmentasi", "masa duka", "rumah sakit", "mie", "ibu","kematian","ayah","hidup","kesendirian"]);
+        hideUnhide('tutorial', 'tutorial-div', 'tab1', 'tab1');
+        hideUnhide('reset', 'tab1', 'tab2', 'tab2');
+        hideUnhide('terang', 'tab2', 'tab3', 'tab3');
+        hideUnhide('gelap', 'tab3', 'tab4', 'tab4');
+        startFlicker('tutorial', 500);
+        startFlicker('reset', 250);
+        startFlicker('terang', 500);
+        startFlicker('gelap', 500);
+        startFlicker('reset-page', 250);
+        startFlicker('to-hub', 250);
+        startFlicker('music-end', 500);
+
+
+
+    </script>
+
+</body>
